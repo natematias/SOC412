@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Syllabus, SOC 412: Designing Field Experiments at Scale</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        window.hypothesisConfig = function () {
+            return { showHighlights : true };
+        };
+    </script>
+    <script defer src="https://hypothes.is/embed.js"></script>
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pusociology" />
+<meta name="twitter:creator" content="@natematias" />
+<meta property="og:url" content="http://natematias.com/courses/soc402/syllabus.html" />
+<meta property="og:title" content="Syllabus, SOC 412: Designing Field Experiments at Scale" />
+<meta property="og:description" content="Experiments test policies & products, audit injustice, and grow knowledge. How can we experiment reliably & ethically at scale?"/>
+<meta property="og:image" content="http://natematias.com/courses/soc402/ZSATRwm.png" />
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Designing Field Experiments at Scale</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="mailto:jmatias@princeton.edu">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="description" id="course-outline">
+        <h1>Syllabus</h1>
+        <p><strong>Time:</strong> 8:30am - 9:50am Monday and Wednesday</p>
+        <p><strong>Location</strong>: TBA.</p>
+        <p><strong>Size</strong>: Seminar.</p>
+        <p><strong>Weekly Activities</strong>:  Students will read 30-40 pages per week, complete a weekly writing or analysis challenge in pairs, and document their work in a short blog post. The final is a project and a short paper. The class will also be coordinated with an optional speaker series featuring leading experimentalists in industry and public service.</p>
+        <p><strong>Grading</strong>: Class participation: 20%. Weekly assignments: 20%. Midterm experiment design: 20%. Final project: 40%. </p>
+        <p><strong>Pre-requisites</strong>: POL 345/SOC 301, or with permission of the instructor, other background in statistics or data analysis.</p>
+
+        <h2>Meeting topics and assigned readings</h2>
+        <p>Ninety-minute class sessions will alternate between <strong>discussions of key issues</strong> that include student-led components and <strong>workshops</strong> that focus on methods and project feedback.</p>
+
+        <p>Required readings are starred; others are recommended and will be presented by students who have chosen that week. Grading policies and specific instructions for assignments will be handed out on the first day of class, and available on the course website. </p>
+
+        <p><u><em>This syllabus is a living document</em></u>, and the readings are subject to change as we go along, so please keep checking this document for the latest.</p>
+        </p>
+
+<h2>Part I: Understanding Field Experiments</h2>
+<dt><span class="label label-warning">Lecture &amp; Discussion</span> Field Experiments in Policy, Products, and Social Science (Feb 5)</dt>
+<ul>
+<li>* William R. Shadish, Thomas D. Cook, and Donald T. Campbell. <em><a href="https://pdfs.semanticscholar.org/9453/f229a8f51f6a95232e42acfae9b3ae5345df.pdf">Experimental and Quasi-Experimental Designs for Generalized Causal Inference</a></em>. Boston: Houghton-Mifflin, 2002. (<em>chapter 1</em><em>)</em></li>
+<li> Salganik, M. J., &amp; Watts, D. J. (2009). <em><a href="https://www.princeton.edu/~mjs3/salganik_watts09.pdf">Web-Based Experiments for the Study of Collective Social Dynamics in Cultural Markets</a></em>. Topics in Cognitive Science, 1 (3), 439&ndash;468.</li>
+<li> Rost, K., Stahel, L., &amp; Frey, B. S. (2016). <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0155923">Digital social norm enforcement: Online firestorms in social media</a>. PloS one, 11 (6), e0155923</li>
+</ul>
+<dt><span class="label label-info">Workshop</span> Introduction to Randomized Trials (Feb 7)</dt>
+<ul>
+<li>This workshop session reviews basic concepts needed for the class and introduces the process of conducting a randomized trial, including <em>treatments</em>, <em>random assignment</em>, and <em>outcomes</em>. Students will conduct our first randomized trial in this session. Students will also be introduced to the notations and conventions used in the class.</li>
+</ul>
+<dt><span class="label label-warning">Lecture &amp; Discussion</span> Studying Online Behavior at Scale (Feb 12)</dt>
+<ul>
+<li>* Kohavi, R., Deng, A., Frasca, B., Walker, T., Xu, Y., &amp; Pohlmann, N. (2013). <a href="http://dl.acm.org/citation.cfm?id=2488217">Online controlled experiments at large scale</a>. In Proceedings of the 19th ACM SIGKDD international conference on Knowledge discovery and data mining (pp. 1168&ndash;1176). ACM.</li>
+<li>* Scheiber, N. (2017, April 2). <a href="https://www.nytimes.com/interactive/2017/04/02/technology/uber-drivers-psychological-tricks.html">How Uber Uses Psychological Tricks to Push Its Drivers&rsquo; Buttons. The New York Times</a>. Retrieved from</li>
+<li>* Matias, J. Nathan, Mou Merry. Community-Led Experiments in Platform Governance. (under review).</li>
+<li>Ge, Y., Knittel, C. R., MacKenzie, D., &amp; Zoepf, S. (2016). <a href="https://economics.stanford.edu/sites/default/files/zoepf.pdf">Racial and gender discrimination in transportation network companies</a> (No. w22776). National Bureau of Economic Research.</li>
+<li>Matias, J. N. (2016, December 12). <a href="https://medium.com/mit-media-lab/the-obligation-to-experiment-83092256c3e9">The Obligation To Experiment</a>. MIT Media Lab.</li>
+<li>Grimmelmann, J. (2015). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2604168">The law and ethics of experiments on social media users</a>. 13 Colo. Tech. L.J. 219, 2015</li>
+</ul>
+<dt><span class="label label-info">Workshop</span> Research Ethics (Feb 14)</dt>
+<ul>
+<li>This workshop focuses on research ethics procedures. Students should have completed Princeton's IRB training by this point in the class. Make sure to plan this into your week. IRB training can take as many as six hours to complete.</li>
+</ul>
+<dt><span class="label label-warning">Lecture &amp; Discussion</span> Moderation, Fact-Checking, Influence: Studying Online Behavior of Humans &amp; Machines (Feb 19)</dt>
+<ul>
+<li>* Matias, J. Nathan. (2016) <a href="http://ipp.oii.ox.ac.uk/sites/ipp/files/documents/JNM-The_Civic_Labor_of_Online_Moderators__Internet_Politics_Policy_.pdf">The Civic Labor of Online Moderators</a>. Oxford Internet, Policy, and Politics Conference. Oxford, UK</li>
+<li>* Grimmelmann, J. (2015). <a href="http://digitalcommons.law.yale.edu/cgi/viewcontent.cgi?article=1110&amp;context=yjolt">The virtues of moderation</a>. Yale JL &amp; Tech., 17, 42.</li>
+<li>* (additional paper forthcoming)</li>
+<li>Muchnik, L., Aral, S., &amp; Taylor, S. J. (2013). <a href="https://doi.org/10.1126/science.1240466">Social Influence Bias: A Randomized Experiment</a>. Science, 341 (6146), 647&ndash;651.</li>
+<li>Lewandowsky, S., Ecker, U. K. H., Seifert, C. M., Schwarz, N., &amp; Cook, J. (2012). <a href="http://journals.sagepub.com/doi/abs/10.1177/1529100612451018?journalCode=psia">Misinformation and Its Correction: Continued Influence and Successful Debiasing</a>. Psychological Science in the Public Interest, 13 (3), 106&ndash;131<strong>.</strong></li>
+</ul>
+<dt><span class="label label-info">Workshop</span> Statistics of Experiment Design (Feb 21)</dt>
+<ul>
+<li>This workshop outlines statistical work involved in designing an experiment, introducing core assumptions of experiment design, including <em>excludability</em> and <em>non-interference</em>.</li>
+</ul>
+<h2>Part II: Planning Your Field Experiment</h2>
+<dt><span class="label label-warning">Lecture &amp; Discussion</span> The Role of Experiments in a Democracy (Feb 26)</dt>
+<ul>
+<li>* Richard H. Thaler, Cass R. Sunstein. (2008) <strong>Nudge: Improving decisions about health, wealth, and happiness</strong>. Yale University Press. (Chapter 1)</li>
+<li>* Campbell, D. T. (1998). <em><strong>The experimenting society</strong></em>. In The experimenting society: Essays in honor of Donald T. Campbell (p. 35). New Brunswick: Transaction Publishers.</li>
+<li> Desposato, S. (2014, November 3). <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2014/11/03/ethics-and-research-in-comparative-politics/">Ethics and research in comparative politics</a>. Washington Post.</li>
+</ul>
+<dt><span class="label label-info">Workshop</span> Planning An Experiment (Outcomes, Power Analysis) (Feb 28)</dt>
+<ul>
+<li>In this workshop, students learn how to choose outcome variables and conduct a power analysis starting with observed behavior, projecting possible effects, and simulating the chance of observing the effect for a given study design</li>
+<li> Pettingill, L. M. (2017, March 21). <a href="https://medium.com/airbnb-engineering/4-principles-for-making-experimentation-count-7a5f1a5268a">4 Principles for Making Experimentation Count</a>. Airbnb Engineering and Data Science.</li>
+<li>We will also begin the process of matching student teams with community partners to develop experiment ideas together.</li>
+</ul>
+<dt><span class="label label-warning">Lecture &amp; Discussion</span> Improving the Quality of Experiments and Their Results (March 5)</dt>
+<ul>
+<li>*  Lin, W., &amp; Green, D. P. (2016).<a href="https://www.stat.berkeley.edu/~winston/sop-safety-net.pdf"> Standard operating procedures: A safety net for pre-analysis plans</a>. PS: Political Science &amp; Politics, 49 (3), 495-500.</li>
+<li>* Bavel, J. V. (2016, May 27). <a href="https://www.nytimes.com/2016/05/29/opinion/sunday/why-do-so-many-studies-fail-to-replicate.html">Why Do So Many Studies Fail to Replicate?</a> The New York Times.</li>
+</ul>
+<dt><span class="label label-info">Workshop</span> Developing a Pre-Analysis Plan (March 7)</dt>
+<ul>
+<li>In this workshop, students will learn how to produce a pre-analysis plan. We will also discuss the midterm, which will be to write up an experiment design.</li>
+</ul>
+<dt><span class="label label-warning">Lecture &amp; Discussion</span> Planning an Experiment with Community Partners (March 12)</dt>
+<ul>
+<li>* Glennerster, R. (2017). <a href="https://www.povertyactionlab.org/sites/default/files/publications/Practical%20issues%20in%20RCTs_Glennerster%20.pdf">The practicalities of running randomized evaluations: partnerships, measurement, ethics, and transparency</a>. Handbook of Economic Field Experiments, 1, 175-243. (<em>pages 1-18)</em></li>
+<li>* Cousins, J. B., &amp; Whitmore, E. (1998). <a href="http://onlinelibrary.wiley.com/doi/10.1002/ev.1114/abstract">Framing participatory evaluation</a>. New Directions for Evaluation, 1998 (80), 5&ndash;23.</li>
+<li>* (2017) <a href="https://www.reddit.com/r/politics/comments/6o1ipb/research_on_the_effect_downvotes_have_on_user//">Research on the effect downvotes have on user civility</a>. Discussion on reddit.com</li>
+</ul>
+<dt><span class="label label-info">Workshop</span> Designing and Planning an Experiment With Partners <strong> (March 14)</strong></dt>
+<ul>
+<li>This workshop focuses on processes for developing experiment ideas with communities. In this workshop, we will work through the example problem space of fact-checking, imagine a range of possible experiments, and discuss their individual and collective contribution to the issue.</li>
+<li>We will also begin hosting conversations between community partners and student teams on study design</li>
+</ul>
+<br/>
+<dt><span class="label label-danger">(Spring Recess)</span></dt>
+<br/>
+<br/>
+<dt><span class="label label-warning">Lecture &amp; Discussion</span> Context, Structure, and Mechanisms in Experiment Design (March 26)</dt>
+<ul>
+<li>* Mortensen, C. R., &amp; Cialdini, R. B. (2010). <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1751-9004.2009.00239.x/full">Full-Cycle Social Psychology for Theory and Application</a>. Social and Personality Psychology Compass, 4 (1), 53&ndash;63.</li>
+<li>* Paluck, E. L., Shepherd, H., &amp; Aronow, P. M. (2016). <a href="http://www.pnas.org/content/113/3/566.abstract">Changing climates of conflict: A social network experiment in 56 schools</a>. Proceedings of the National Academy of Sciences, 113 (3), 566-571.</li>
+<li> Aral, S., &amp; Walker, D. (2011). <a href="http://pubsonline.informs.org/doi/abs/10.1287/mnsc.1110.1421">Creating social contagion through viral product design: A randomized trial of peer influence in networks</a>. Management science, 57 (9), 1623-1639.</li>
+<li>TBA: Example or reading on using multiple arms to identify mediators or test rival hypotheses</li>
+</ul>
+<dt><span class="label label-info">Workshop</span> Managing Things You Cannot Control: Regression Adjustment, Stratification, Cluster Randomization (March 28)</dt>
+<ul>
+<li>
+This workshop introduces methods for assigning treatments to groups, regions, and periods of time, as well as methods for analyzing clustered experiments
+</li>
+<li>As your student team has conversations with community partners, knowing these approaches to assignment will help you think creatively about turning community questions into an experiment design</li>
+<li> Green, D. P., &amp; Vavreck, L. (2007). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1448419">Analysis of cluster-randomized experiments: A comparison of alternative estimation approaches</a>. Political Analysis, 16 (2), 138-152.</li>
+</ul>
+<dt><span class="label label-warning">Lecture &amp; Discussion</span> Combining Results from Many Experiments (April 2)</dt>
+<ul>
+<li>* Bavel, J. V. (2016, May 27). <a href="https://www.nytimes.com/2016/05/29/opinion/sunday/why-do-so-many-studies-fail-to-replicate.html">Why Do So Many Studies Fail to Replicate?</a> The New York Times.</li>
+<li> (more readings TBA- looking for a good readings on strengths/weaknesses of meta-analyses, as well as a clear howto on meta-analyses in R) </li>
+</ul>
+<dt><span class="label label-info">Workshop</span> Feedback on Final Project Pre-Analysis Plan (April 4)</dt>
+<ul>
+<li>In this workshop, students will get feedback on draft pre-analysis plans that will also form part of conversations and negotiations with community partners.</li>
+</ul>
+<dt><span class="label label-warning">Lecture &amp; Discussion</span> Interpreting, Using, and Misusing Experiment Results (April 9)</dt>
+<ul>
+<li>* Weiss, C. H. (1979). <a href="https://www.jstor.org/stable/3109916">The many meanings of research utilization</a>. Public Administration Review, 39 (5), 426&ndash;431.</li>
+<li>* Koerth-Baker, M. (2017, May 11). <a href="https://fivethirtyeight.com/features/trump-noncitizen-voters/">The Tangled Story Behind Trump&rsquo;s False Claims Of Voter Fraud</a>.</li>
+<li> Miller, J. E. (2015). The Chicago guide to writing about numbers. University of Chicago Press. Chicago. (just the section on <em>Presenting statistical results to non-statistical audiences</em>)</li>
+<li> Batley, Paul. Kill Or Cure. <a href="http://kill-or-cure.herokuapp.com/">http://kill-or-cure.herokuapp.com/</a></li>
+<li>Mitton, C., Adair, C. E., McKenzie, E., Patten, S. B., &amp; Perry, B. W. (2007). <a href="https://www.ncbi.nlm.nih.gov/pubmed/18070335">Knowledge transfer and exchange: review and synthesis of the literature</a>. Milbank Quarterly, 85 (4), 729&ndash;768.</li>
+</ul>
+<h2>Part III: Deploying &amp; Reporting Your Field Experiments</h2>
+<dt><span class="label label-info">Workshop</span> Deploying and Monitoring Your Experiment (April 11)</dt>
+<ul>
+<li>This workshop will review best practices for ensuring that a field experiment is deployed and administered successfully.</li>
+<li>Students will report on early results from pilot deployments of their experiment. Based on those results, students will hopefully deploy their experiment soon after</li>
+</ul>
+<dt><span class="label label-warning">Lecture &amp; Discussion</span> Debriefing, Harm, and Accountability in Field Experiments (April 16)</dt>
+<ul>
+<li>* Krafft, P. M., Macy, M., &amp; Pentland, A. (2016). <a href="https://arxiv.org/abs/1611.00447">Bots as Virtual Confederates: Design and Ethics</a>. CSCW 2017</li>
+<li>* Desposato, S. (2015). Ethics and experiments: problems and solutions for social scientists and policy professionals. Routledge. <em>The Value and Challenges of Using Local Ethical Review in Comparative Politics Experiments </em></li>
+<li> Munger, K. (2017). <a href="https://link.springer.com/article/10.1007/s11109-016-9373-5">Tweetment effects on the tweeted: Experimentally reducing racist harassment</a>. Political Behavior, 39 (3), 629-649.</li>
+<li>Gray, M. L. (2014, July 8). <a href="http://marylgray.org/?p=288">When Science, Customer Service, and Human Subjects Research Collide. Now What?</a> marylgray.org</li>
+</ul>
+<dt><span class="label label-info">Workshop</span> Analyzing and Communicating Experiment Results (April 18)</dt>
+<ul>
+<li>
+This workshop reviews statistical methods for interpreting experiment results, focusing on describing results to a public audience and illustrating research findings.
+</li>
+</ul>
+<dt><span class="label label-info">Workshop</span> Graceful Recovery from Problems in Field Experiments (April 23)</dt>
+<ul>
+<li>This workshop will discuss strategies for recovering from problems in field experiments and work through problems that students may face in their experiments, which will have deployed by this point</li>
+</ul>
+<dt><span class="label label-info">Workshop</span> Preparing for Public Knowledge of Your Research (April 25)</dt>
+<ul>
+<li>
+This workshop focuses on developing strategies for handling public discussion of research results by affected communities and a wider audience
+</li>
+<li>Students will discuss their own strategy for community debriefing.</li>
+</ul>
+<dt><span class="label label-warning">Lecture &amp; Discussion</span> Advanced Topics in Field Experimentation (April 30)</dt>
+<ul>
+<li> Wager, S., &amp; Athey, S. (2017). <a href="https://arxiv.org/pdf/1510.04342.pdf">Estimation and inference of heterogeneous treatment effects using random forests</a>. Journal of the American Statistical Association.</li>
+<li> Eckles, D., Karrer, B., &amp; Ugander, J. (2017). <a href="https://arxiv.org/pdf/1404.7530.pdf">Design and analysis of experiments in networks: Reducing bias from interference</a>. Journal of Causal Inference, 5 (1).</li>
+<li> Allcott, H. (2015). <a href="https://wp.nyu.edu/dri/wp-content/uploads/sites/2459/2015/08/Allcott_SiteSelectionBias-14.pdf">Site selection bias in program evaluation</a>. The Quarterly Journal of Economics, 130 (3), 1117&ndash;1165.</li>
+<li>Yong, E. (2017, January 5). <a href="https://www.theatlantic.com/science/archive/2017/01/a-field-of-fake-evolving-flowers-solves-an-old-evolutionary-puzzle/512216/">An Ingenious Experiment of Jungle Bats and Evolving Artificial Flowers</a>. The Atlantic.</li>
+</ul>
+<dt><span class="label label-warning">Presentations</span> Final Project Presentations (May 2)</dt>
+<ul>
+<li>In this session, students will present their final projects for final feedback before submitting the final paper.</li>
+</ul>
+
+
+
+      </div>
+
+    </div><!-- /.container -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted"><a href="https://sociology.princeton.edu/">Department of Sociology</a> | <a href="https://www.princeton.edu">Princeton University</a></p>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
