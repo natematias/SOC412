@@ -150,6 +150,7 @@ dwplot(base.log.linear, dot_args = list(size=2)) +
         axis.title.x=element_text(size=18, hjust=0, color="#555555"),
         axis.title.y=element_text(size=18),
         axis.text.y=element_text(size=18),
+        axis.text.x=element_text(size=18),
         plot.title=element_text(size=20, hjust=0)) +
   scale_color_discrete(guide=FALSE) +
   xlim(0,2) +
