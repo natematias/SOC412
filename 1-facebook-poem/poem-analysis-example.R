@@ -4,6 +4,8 @@ library(psych)
 library(MASS)
 library(gmodels)
 library(corrplot)
+library(dotwhisker)
+
 
 rm(list=ls())
 cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
@@ -39,6 +41,14 @@ ggplot(poems, aes(interactions)) +
   xlab("Facebook Interactions") +
   scale_color_manual(values=cbbPalette, name="Intervention") +
   ggtitle("Histogram of Facebook Interactions Per Poem")
+
+ggplot(poems, aes(log1p(interactions))) +
+  geom_histogram(binwidth=0.25) +
+  theme_bw(base_size = 15, base_family = "Helvetica") +
+  ylab("ln Number of Poems") +
+  xlab("Facebook Interactions") +
+  scale_color_manual(values=cbbPalette, name="Intervention") +
+  ggtitle("Histogram of log-transformed Facebook Interactions Per Poem")
 
 
 ########################################################
@@ -121,11 +131,50 @@ summary(base.linear <- lm(interactions ~ condition, data=poems))
 ## LOG-TRANSFORMED LINEAR REGRESSION
 summary(base.log.linear <- lm(log1p(interactions) ~ condition, data=poems))
 
+
+#####################
+#### TABLES:
+
+screenreg(list(base.linear, base.log.linear),
+          custom.model.names=c("Linear", "Log-Transformed"),
+          include.adjrs=FALSE,
+          custom.coef.names = c("(Intercept)", "Color"),
+          custom.note = "Linear models estimating log-transformed\nlikes, comments, and shares per poem")
+
+#####################
+#### PLOT EFFECT
+
+dwplot(base.log.linear, dot_args = list(size=2)) +
+  theme_bw(base_size = 15, base_family = "Helvetica") +
+  theme(plot.margin = unit(c(1, 5, 1, 1), "mm"),
+        axis.title.x=element_text(size=18, hjust=0, color="#555555"),
+        axis.title.y=element_text(size=18),
+        axis.text.y=element_text(size=18),
+        plot.title=element_text(size=20, hjust=0)) +
+  scale_color_discrete(guide=FALSE) +
+  xlim(0,2) +
+  ggtitle("TITLE HERE") + 
+  xlab(paste("                                          EFFECT LEGEND HERE\n\n",
+             "This line indicates.... \n", 
+             "(n = ", nrow(poems), " poems published from ",
+             min(as.POSIXct(poems$date))," to ",
+             max(as.POSIXct(poems$date)), "\n",
+             "by NAME A, NAME BY", sep=""))
+
+
+#############################################
+#############################################
+## EXTRA MATERIALS (NOT NEEDED FOR WEEK ONE)
+#####################
+
+
 ## NEGATIVE BINOMIAL MODEL
+## (ignore in week one assignment)
 summary(base.neg.bin <- glm.nb(interactions ~ condition, data=poems))
 
 #####################
 #### ADJUSTED MODELS:
+#### (IGNORE IN WEEK ONE ASSIGNMENTS)
 
 ## LINEAR REGRESSION
 summary(adj.linear <- lm(interactions ~ condition + weekend, data=poems))
@@ -140,12 +189,13 @@ summary(adj.neg.bin <- glm.nb(interactions ~ condition + weekend, data=poems))
 #####################
 #### TABLES:
 
+
 ## TABLE FOR LINEAR REGRESSION
 screenreg(list(base.linear, adj.linear),
           custom.model.names = c("Baseline", "Adjusted"),
           custom.coef.names = c("(Intercept)", "Color", "Weekend"),
           include.adjrs=FALSE,
-          custom.note = "Linear model esimating \nlikes, comments, and shares per poem")
+          custom.note = "Linear model estimating \nlikes, comments, and shares per poem")
 
 
 ## TABLE FOR LOG-TRANSFORMED LINEAR REGRESSION
@@ -153,11 +203,10 @@ screenreg(list(base.log.linear, adj.log.linear),
           custom.model.names=c("Baseline", "Adjusted"),
           include.adjrs=FALSE,
           custom.coef.names = c("(Intercept)", "Color", "Weekend"),
-          custom.note = "Linear model esimating log-transformed\nlikes, comments, and shares per poem")
+          custom.note = "Linear model estimating log-transformed\nlikes, comments, and shares per poem")
 
 ## TABLE FOR NEGATIVE BINOMIAL MODEL
 screenreg(list(base.neg.bin, adj.neg.bin),
           custom.model.names=c("Baseline", "Adjusted"),
           custom.coef.names = c("(Intercept)", "Color", "Weekend"),
-          custom.note = "Negative binomial model esimating \nthe incidence rate of likes, comments, \nand shares per poem")
-
+          custom.note = "Negative binomial model estimating \nthe incidence rate of likes, comments, \nand shares per poem")
