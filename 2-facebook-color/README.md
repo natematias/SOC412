@@ -6,8 +6,6 @@ Princeton University Department of Sociology
 
 J. Nathan Matias ([@natematias](https://twitter.com/natematias))
 
-> *Disclaimer: while this assignment includes reference to factual people and events, the assignment, data, and outcomes are a simulated exercise for classroom purposes.*
-
 ## Background
 
 In this class assigment, carried out in teams of two or three, you will be expected to carry out a randomized trial over a 1-2 week period, combine data from your findings, analyze the results, and report what you found. The basic structure of the Social Media Color experiment is based on the [Facebook Poem Experiment](https://github.com/natematias/SOC412/blob/master/1-facebook-poem/README.md) from last week. The purpose of this assignment is to give you a first opportunity to conduct an experiment live on the web.
