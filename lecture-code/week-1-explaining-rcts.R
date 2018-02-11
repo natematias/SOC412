@@ -8,7 +8,7 @@ cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2"
 ### SIMULATE CORRELATION
 set.seed(423)
 
-simdata <- mvrnorm(100, mu = c(0,0), Sigma = matrix(c(2,0.05,0.05,2), ncol = 2),
+simdata <- mvrnorm(100, mu = c(0,0), Sigma = matrix(c(1,0.04,0.04,1), ncol = 2),
         empirical = TRUE)
 
 cor.data <- data.frame(dep=simdata[,1], screen=simdata[,2])
