@@ -22,7 +22,7 @@ To conduct this study, you will need to carry out the following procedures:
   * Make a record about the message you are about to post:
     * Record the **number of characters** used in your message (the spreadsheet has example code. If you prefer not to share the text of your messages, just enter the number)
     * **Predict the popularity** of the post and enter the value in the spreadsheet *(from 1 to 5 where 1 means that you expect no one to engage, and 5 means you expect the post to be among your most popular)*
-  * Make a record about the previous day's message at the same time you make a new post, roughly after 24 hours:
+  * **Make a record about the previous day's message** at the same time you make a new post, roughly after 24 hours:
     * The number of Likes, Shares, and Comments received by the item
     * If you miss a day, record NONE under LIKES/COMMENTS/SHARES (try very hard not to miss a day)
   * **Do not reply to your post** over the next 24 hours
