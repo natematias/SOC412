@@ -25,6 +25,8 @@ This assignment will support you to:
 * Collect data that we will be able to use to analyze multiple field experiments
 
 ## Eligible Games
+This study has been optimized for the game of [cornhole](https://en.wikipedia.org/wiki/Cornhole). A portable cornhole board may be available for this assignment upon request.
+
 While the easiest games to set up for this assignment will involve some kind of throwing at a goal, the research ethics protocol includes the following games: 
 
 > physical games of skill and chance such as cornhole, shuffleboard, bocce/bowls, croquet, (non-alcoholic) beer pong, (velcro) darts, velcro soccerball darts, paper football, ladder toss (involving ping pong balls), horseshoes, [rutabaga curling](http://www.rutabagacurl.com/), washer toss, [pancake races](https://www.youtube.com/watch?v=jxAICVug-54), the Egg Drop Challenge, pick-up sticks, and giant Jenga
@@ -36,8 +38,10 @@ To conduct this study, you will need to carry out the following procedures:
 
 * Acquire all materials for the experiment and **do a test run** of the study
   * Time things so you can be sure to fit the study procedures in the available time
-* Schedule **an event for the the experiment** and invite people to join. The event should be 10 people or more.
+* Schedule **an event for the the experiment** and invite people to join. The event should be 12 people or more. You will need to **conduct a version of this event at least two times**.
   * The venue should be large enough for two versions of the game in question
+  * You will want a small table for providing people with consent information to read, and where they can complete the form
+  * You may also want a chair or table for the people who are entering scores
   * You may also wish to set up a screen in the venue, where you can display any results 
 * This study can be conducted in two ways:
   * As a group event where everyone shows up for a period of time and conducts the study together
@@ -51,17 +55,20 @@ Advertisements for your event should include the following statement:
 Within the event, here are the procedures to follow. Because this assignment involves playing two different versions of the game, you may wish to split up investigators and also ask participants to help with recording scores.
 
 * For each participant:
-  * Show them the [consent form](CONSENT.md) 
+  * Show them the [consent information](CONSENT.md) 
   * If they wish to continue
-    * Assign them a random number
-    * Ask them to take a version of this survey, and explain that completing the survey indicates consent
+   * Assign them a random number
+   * Ask them to take [a version of this survey that you have customized](https://goo.gl/forms/VTmg4HWL58zVWFGn1), and explain that completing the survey indicates consent
   * Assign them to one of the two versions of the game
   * Record their scores (this is most easily done by asking a participant to record scores a Google Spreadsheet by entering the values as others make their throws)
+   * Scoring criteria for cornhole are included in this blog post 
 * Repeat this procedure until all participants have completed the game
 * Prepare the data:
   * Copy-paste answers from the Google Form into the scores spreadsheet, duplicating a person's answers alongside every throw they made
+   * [Google spreadsheet example](https://docs.google.com/spreadsheets/d/17ZT7xQfjl9XKXt_Ixt6bIVKkW_BocSiqM6lOJj8iJdc/edit?usp=sharing)
+   * [Excel spreadsheet example](Cornhole-Challenge-RCT-Example-Spreadsheet.xlsx)
 * Analyze the data:
-  * Use the included statistical models to estimate the average treatment effect on chance of someone to score
+  * Estimate the average treatment effect on the chance of someone to score
 * Share and discuss the results with participants
 
 ## The Assignment
