@@ -69,6 +69,7 @@ Within the event, here are the procedures to follow. Because this assignment inv
     * [Excel spreadsheet example](Cornhole-Challenge-RCT-Example-Spreadsheet.xlsx)
 * Analyze the data:
   * Estimate the average treatment effect on the chance of someone to score
+  * Illustrate the effect in a chart
 * Share and discuss the results with participants
 
 ## The Assignment
