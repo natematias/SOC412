@@ -1,4 +1,4 @@
-# Cornhole Challenge Experiment (Week 2 Optional Assignment)
+# Cornhole Challenge Experiment (Week 2-3 Optional Assignment)
 
 **SOC 412: Designing Field Experiments at Scale**
 
