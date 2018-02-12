@@ -71,9 +71,20 @@ Within the event, here are the procedures to follow. Because this assignment inv
   * Estimate the average treatment effect on the chance of someone to score ( you can [publish the data to the web directly from Google Sheets as a CSV](https://support.google.com/docs/answer/37579?co=GENIE.Platform%3DDesktop&hl=en) and [load it directly into R](https://www.r-bloggers.com/getting-data-from-an-online-source/))
     * The R script [cornhole-analysis.R](cornhole-analysis.R) includes example code for loading data directly from Google spreadsheets
   * Illustrate the effect in a chart
-* Share and discuss the results with participants
+* Share the results with participants, asking them to discuss the question of whether they prefer a particular version of the game, and encouraging them to incorporate what they learned about the game after conducting the analysis. Take notes during or after the event, since you will write about this discussion later.
 
-## The Assignment
-TBA
+## Assignment
+For this assignment, work in pairs to discuss your intervention, create experiment records, check in on research validity, and write results.
 
+In the **first week**, you will be expected to conduct your first experiment and write up the results in a report. The report should include:
+* a paragraph **describing the experiment design**
+* a paragraph **summarizing the findings**
+* graphics:
+  * illustrating the interventions
+  * illustrating the findings
 
+Please submit the assignment via Blackboard in HTML or Word format using the naming convention SURNAME1-SURNAME2-CORNHOLE-1.doc
+
+In the **second week**, you will conduct the experiment a second time. Building on data from both studies you will write:
+1. A **4-6 paragraph personal essay** that asks the question: **what contribution could experiments make to decisions about games of skill and chance, and what are the limitations?** Base this on your own experience and on the discussion with participants about which version of the game they prefer. You are encouraged to discuss ideas with your partner, but your essay should be solely your own work
+2. A joint essay reporting your results: this essay combines data from both of your studies and reports the collective results (details TBA)
