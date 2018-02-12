@@ -88,4 +88,4 @@ Please submit the assignment via Blackboard in HTML or Word format using the nam
 
 In the **second week**, you will use the data from the full two-week experiment to calculate your results and debrief your followers. You will then submit the following assignments:
 * a **4-6 paragraph personal essay** that reflects on the experience, and on the reaction of your followers, in light of our readings on research ethics. You are encouraged to discuss ideas with your partner, but your essay should be solely your own work
-* A joint essay reporting your results: this essay combines data from both of your studies and reports the collective results (details TBA)
+* A **joint essay reporting your results**: this essay combines data from both of your studies and reports the collective results (details TBA)
