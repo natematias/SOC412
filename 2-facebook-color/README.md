@@ -10,6 +10,15 @@ J. Nathan Matias ([@natematias](https://twitter.com/natematias))
 
 In this class assigment, carried out in teams of two or three, you will be expected to carry out a randomized trial over a 1-2 week period, combine data from your findings, analyze the results, and report what you found. The basic structure of the Social Media Color experiment is based on the [Facebook Poem Experiment](https://github.com/natematias/SOC412/blob/master/1-facebook-poem/README.md) from last week. The purpose of this assignment is to give you a first opportunity to conduct an experiment live on the web.
 
+## Purpose of the assignment
+This assignment will support you to:
+
+* Complete a full field experiment from start to finish in two weeks
+* Think about the ethics of experimentation with the people in your life, as a precursor to doing experiments in other people's lives
+* Debrief people about the experiment process
+* Communicate experiment results to a public audience
+* Collect data that we will be able to use to analyze multiple field experiments
+
 ## Study Procedure
 To conduct this study, you will need to carry out the following procedures:
 
