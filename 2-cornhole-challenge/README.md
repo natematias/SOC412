@@ -87,4 +87,4 @@ Please submit the assignment via Blackboard in HTML or Word format using the nam
 
 In the **second week**, you will conduct the experiment a second time. Building on data from both studies you will write:
 1. A **4-6 paragraph personal essay** that asks the question: **what contribution could experiments make to decisions about games of skill and chance, and what are the limitations?** Base this on your own experience and on the discussion with participants about which version of the game they prefer. You are encouraged to discuss ideas with your partner, but your essay should be solely your own work
-2. A joint essay reporting your results: this essay combines data from both of your studies and reports the collective results (details TBA)
+2. A **joint essay reporting your results**: this essay combines data from both of your studies and reports the collective results (details TBA)
