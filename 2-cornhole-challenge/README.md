@@ -61,12 +61,12 @@ Within the event, here are the procedures to follow. Because this assignment inv
    * Ask them to take [a version of this survey that you have customized](https://goo.gl/forms/VTmg4HWL58zVWFGn1), and explain that completing the survey indicates consent
   * Assign them to one of the two versions of the game
   * Record their scores (this is most easily done by asking a participant to record scores a Google Spreadsheet by entering the values as others make their throws)
-   * Scoring criteria for cornhole are included in this blog post 
+    * Scoring criteria for cornhole are included in [this blog post](https://civic.mit.edu/blog/natematias/the-cornhole-experiment-a-workshop-for-teaching-randomized-trials) 
 * Repeat this procedure until all participants have completed the game
 * Prepare the data:
   * Copy-paste answers from the Google Form into the scores spreadsheet, duplicating a person's answers alongside every throw they made
-   * [Google spreadsheet example](https://docs.google.com/spreadsheets/d/17ZT7xQfjl9XKXt_Ixt6bIVKkW_BocSiqM6lOJj8iJdc/edit?usp=sharing)
-   * [Excel spreadsheet example](Cornhole-Challenge-RCT-Example-Spreadsheet.xlsx)
+    * [Google spreadsheet example](https://docs.google.com/spreadsheets/d/17ZT7xQfjl9XKXt_Ixt6bIVKkW_BocSiqM6lOJj8iJdc/edit?usp=sharing)
+    * [Excel spreadsheet example](Cornhole-Challenge-RCT-Example-Spreadsheet.xlsx)
 * Analyze the data:
   * Estimate the average treatment effect on the chance of someone to score
 * Share and discuss the results with participants
