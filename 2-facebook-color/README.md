@@ -81,7 +81,7 @@ In the **first week**, you will be expected to produce draft materials for commu
 * a statement about research ethics
 * graphics:
   * displaying the interventions
-  * illustrating the effect
+  * illustrating the findings
 * questions that you expect you might be asked, with possible answers
 
 Please submit the assignment via Blackboard in HTML or Word format using the naming convention SURNAME1-SURNAME2-FACEBOOK-COLOR-1.doc
