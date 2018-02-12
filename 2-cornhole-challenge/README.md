@@ -69,6 +69,7 @@ Within the event, here are the procedures to follow. Because this assignment inv
     * [Excel spreadsheet example](Cornhole-Challenge-RCT-Example-Spreadsheet.xlsx)
 * Analyze the data:
   * Estimate the average treatment effect on the chance of someone to score ( you can [publish the data to the web directly from Google Sheets as a CSV](https://support.google.com/docs/answer/37579?co=GENIE.Platform%3DDesktop&hl=en) and [load it directly into R](https://www.r-bloggers.com/getting-data-from-an-online-source/))
+    * The R script [cornhole-analysis.R](cornhole-analysis.R) includes example code for loading data directly from Google spreadsheets
   * Illustrate the effect in a chart
 * Share and discuss the results with participants
 
