@@ -87,5 +87,5 @@ In the **first week**, you will be expected to produce draft materials for commu
 Please submit the assignment via Blackboard in HTML or Word format using the naming convention SURNAME1-SURNAME2-FACEBOOK-COLOR-1.doc
 
 In the **second week**, you will use the data from the full two-week experiment to calculate your results and debrief your followers. You will then submit the following assignments:
-* a personal essay that reflects on the experience, and on the reaction of your followers, in light of our readings on research ethics. You are encouraged to discuss ideas with your partner, but your essay should be solely your own work
-* a joint essay that combines data from both of your studies and reports the collective results (details TBA)
+* a **4-6 paragraph personal essay** that reflects on the experience, and on the reaction of your followers, in light of our readings on research ethics. You are encouraged to discuss ideas with your partner, but your essay should be solely your own work
+* A joint essay reporting your results: this essay combines data from both of your studies and reports the collective results (details TBA)
