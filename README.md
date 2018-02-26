@@ -11,3 +11,4 @@ PDFs of lectures are in the **[lectures](lectures/)** folder. Code for generatin
 * Week two assignments:
   * Facebook Color Experiment: **[2-facebook-color](2-facebook-color/)**
   * (optional) Cornhole Challenge: **[2-cornhole-challenge](2-cornhole-challenge/)**
+* Week four assignment: Power Analysis From Observed Behavior **[3-power-analysis](3-power-analysis/)**
