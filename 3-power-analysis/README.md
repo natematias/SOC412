@@ -11,7 +11,7 @@ In this class assignment, carried out in teams of two or three, imagine that you
 * newcomer comments increased by 38%
 * total comments increased by 10%
 
-The community is interested to use a similar practice in their setting, but they have a disagreement over whether the welcome messages will increase participation or decrease it (some people think they're annoying). That's why they turn to your team of experimenters to find out. Because there's a disagreement, the community wants to minimize the amount of time that they conduct the experiment- if it's obtrusive or harmful, they don't want it to run on. So they ask you if you can predict how long the experiment should run before they can be confident in the results. 
+The community is interested to use a similar practice in their setting, but they have a disagreement over whether the welcome messages will increase participation or decrease it (some people think they're annoying). That's why they turn to your team of experimenters to find out. Because there's a disagreement, the community wants to minimize the amount of time that they conduct the experiment- if it's obtrusive or backfires, they don't want it to run too long. So they ask you if you can predict how long the experiment should run before they can be confident in the results. 
 
 Fortunately, because you've taken SOC412, you know what to do: it's time for a **power analysis**.
 
