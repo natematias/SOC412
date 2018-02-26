@@ -45,4 +45,6 @@ For this assignment, work in pairs to develop the code, calculate the power anal
     * Estimate how many days that might take
     * Label and include a chart with your simulations, like the one below(generated from simulated-power-analysis.R). The chart should include your recommendation in it, along with every essential detail about how you constructed the simulation
 
+<hr/>
+
 ![Power analysis example chart](./power_analysis_example.png)
