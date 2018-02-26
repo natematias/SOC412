@@ -28,7 +28,7 @@ This assignment will support you to:
 This assignment includes the following materials:
 * [simulated-power-analysis.R](simulated-power-analysis.R): example code from the lecture
 * [subreddit_posts.csv](subreddit_posts.csv): an anonymized dataset created from public information about a community on reddit
-* [power-analysis-assignment.csv](power-analysis-assignment.csv): a starting point for your assignment code
+* [power-analysis-assignment.R](power-analysis-assignment.R): a starting point for your assignment code
 
 ## Assignment
 For this assignment, work in pairs to develop the code, calculate the power analysis, and write the results. You should submit two files:
