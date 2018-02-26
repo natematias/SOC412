@@ -6,7 +6,12 @@ Princeton University Department of Sociology
 J. Nathan Matias ([@natematias](https://twitter.com/natematias))
 
 ## Background
-In this class assignment, carried out in teams of two or three, imagine that you are approached by an online community to replicate an experiment that [tested the effect of welcome messages on community participation](https://osf.io/jhkcf/). Imagine that the original study found the following effects:
+In this class assignment, carried out in teams of two or three, imagine that you are approached by an online community to replicate an experiment that tested the effect of welcome messages on community participation. The original study used the following procedures:
+* Observe when new posts are submitted to the community
+* Randomly assign a welcome announcement to the top of the discussion
+* Observe the number of overall comments and the number of newcomer comments per post
+
+Imagine that the original study found the following effects:
 
 * newcomer comments increased by 38%
 * total comments increased by 10%
@@ -32,8 +37,8 @@ This assignment includes the following materials:
 
 ## Assignment
 For this assignment, work in pairs to develop the code, calculate the power analysis, and write the results. You should submit two files:
-
-* A Word document that includes a report to the community. This report should include:
+* A **runnable R script** with all of your code
+* A **Word document** that includes a report to the community. This report should include:
   * A paragraph **explaining the goal** of the report
   * **Framing information**
     * A sentence or two re-iterating the experiment procedure
