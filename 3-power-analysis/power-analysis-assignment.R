@@ -51,7 +51,7 @@ cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2"
 ####################################
 posts <- read.csv("subreddit_posts.csv")
 posts$is.selftext <- posts$is.selftext == "True"
-posts$weekend <- (posts$weekday == 6 | posts$weekday ==7)
+posts$weekend <- (posts$weekday == 5 | posts$weekday ==6)
 
 hist(log1p(posts$num.comments))
 
