@@ -43,7 +43,8 @@ simulate.study <- function(i, sample.size, control.mean, treat.mean){
   power.sim.pvalue <- treat.coef['Pr(>|t|)']
   power.sim.significant <- as.double(power.sim.pvalue) < 0.05
   data.frame(i=i, power.sim.ctl.fit = power.sim.intercept,power.sim.treat.effect=power.sim.treat.effect,
-             power.sim.stderr=power.sim.stderr, power.sim.pvalue=power.sim.pvalue,power.sim.significant=power.sim.significant)
+             power.sim.stderr=power.sim.stderr, power.sim.pvalue=power.sim.pvalue,power.sim.significant=power.sim.significant,
+             true.effect = treat.mean - control.mean)
 }
 
 
@@ -62,14 +63,15 @@ for(i in seq(2,num.models.no.effect)){
 }
 
 ## REPORT HOW MANY RESULTS WERE STATISTICALLY SIGNIFICANT
-paste(sprintf("%.01f", as.numeric(summary(poem.models.none$power.sim.significant)[['TRUE']])/nrow(poem.models)*100), 
+paste(sprintf("%.01f", as.numeric(summary(poem.models.none$power.sim.significant)[['TRUE']])/nrow(poem.models.none)*100), 
       "% results statistically significant", sep="")
 
 ## SHOW STUDIES WHERE THE RESULT IS STATISTICALLY SIGNIFICANT
 ggplot(poem.models.none, aes(power.sim.significant, power.sim.treat.effect, color=power.sim.significant)) +
   geom_jitter() +
-  ggtitle(paste(sprintf("%.01f", as.numeric(summary(poem.models.none$power.sim.significant)[['TRUE']])/nrow(poem.models)*100), 
-                "% results statistically significant in simulated experiments with no effect", sep=""))
+  theme_bw(base_size = 15, base_family = "Helvetica") +
+  ggtitle(paste(sprintf("%.01f", as.numeric(summary(poem.models.none$power.sim.significant)[['TRUE']])/nrow(poem.models.none)*100), 
+                "% results statistically significant in\nsimulated experiments with no effect", sep=""))
 
 
 #########################################################
@@ -95,7 +97,7 @@ ggplot(poem.models.small, aes(power.sim.significant, power.sim.treat.effect, col
   geom_jitter() +
   theme_bw(base_size = 15, base_family = "Helvetica") +
   ggtitle(paste(sprintf("%.0f", as.numeric(summary(poem.models.small$power.sim.significant)[['TRUE']])/nrow(poem.models.small)*100), 
-                "% results statistically significant in simulated experiments", sep=""))
+                "% results statistically significant\nin simulated experiments", sep=""))
 
 ## THE MEAN OF THE EFFECTS CONVERGES ON THE EFFECT
 mean(poem.models.small$power.sim.treat.effect)
@@ -150,3 +152,98 @@ ggplot(p.analyses, aes(pct.significant, effect.difference)) +
   geom_point() +
   theme_bw(base_size = 15, base_family = "Helvetica") +
   ggtitle("The larger the file drawer, the greater the absolute bias in the estimate")
+
+
+
+###########################################
+### SIMULATE A VARIETY OF DECISION RULES  #
+###########################################
+set.seed(425)
+
+
+num.models.decision <- 1000
+num.days <- 100
+mean.ctl.decision <- 10
+mean.treat.decision <- 10
+
+poem.models.decision <- simulate.study(1,num.days,mean.ctl.decision,mean.treat.decision + runif(1, -0.5, 0.5))
+for(i in seq(2,num.models.decision)){
+  poem.models.decision <- rbind(poem.models.decision, simulate.study(i,num.days,mean.ctl.decision,mean.treat.decision + runif(1, -0.5, 0.5)))
+}
+
+poem.models.decision$effect.difference <- poem.models.decision$power.sim.treat.effect -  poem.models.decision$true.effect
+
+poem.models.decision$opposite.finding <- (poem.models.decision$power.sim.treat.effect > 0) != (poem.models.decision$true.effect >0)
+
+
+#### NOW PLOT THE TRUE EFFECTS AS A HISTOGRAM
+hist(poem.models.decision$true.effect)
+
+#### NOW PLOT THE TRUE EFFECTS AGAINST THE ESTIMATED EFFECT
+ggplot(poem.models.decision, aes(true.effect, power.sim.treat.effect)) +
+  geom_point() +
+  xlab("True Effect") +
+  ylab("Estimated Treatment Effect")
+
+
+#### NOW PLOT THE INTERVENTIONS THAT EXPERIMENTERS 
+#### SHOULD USE TO MAXIMIZE THEIR GOAL IF THE KNEW THE TRUE EFFECT
+ggplot(poem.models.decision, aes(power.sim.treat.effect, true.effect, color=factor(poem.models.decision$true.effect>0))) +
+  geom_point() +
+  #  geom_hline(yintercept = 0) + 
+  geom_hline(yintercept = 0) + 
+  scale_color_discrete(name="Positive\nEffect") +
+  theme_bw(base_size = 15, base_family = "Helvetica") +
+  ylab("True Effect") +
+  xlab("Estimated Treatment Effect") +
+  ggtitle("Perfect Decisionmaking Would Always Choose\nOnly Positive Effects")
+
+#### NOW PLOT THE TRUE EFFECTS AGAINST THE ESTIMATED EFFECT
+#### AND HIGHLIGHT STATISTICALLY-SIGNIFICANT FINDINGS
+ggplot(poem.models.decision, aes(power.sim.treat.effect, true.effect, color=factor(poem.models.decision$power.sim.significant))) +
+  geom_point() +
+  geom_hline(yintercept = 0) + 
+  scale_color_discrete(name="Statistically\nSignificant") +
+  theme_bw(base_size = 15, base_family = "Helvetica") +
+  ylab("True Effect") +
+  xlab("Estimated Treatment Effect")
+
+#### NOW PLOT THE TRUE EFFECTS AGAINST THE ESTIMATED EFFECT
+#### AND HIGHLIGHT TYPE S ERRORS
+ggplot(poem.models.decision, aes(power.sim.treat.effect, true.effect, color=factor(poem.models.decision$opposite.finding))) +
+  geom_point() +
+  scale_color_discrete(name="Type S\nErrors") +
+  theme_bw(base_size = 15, base_family = "Helvetica") +
+  ylab("True Effect") +
+  xlab("Estimated Treatment Effect")
+
+#### NOW ESTIMATE THE OUTCOMES OF VARIOUS DECISION RULES
+poem.models.decision.pos.sig <- subset(poem.models.decision, (power.sim.treat.effect > 0 & power.sim.significant))
+poem.models.decision.pos <- subset(poem.models.decision, (power.sim.treat.effect > 0))
+poem.models.decision.pos.tenpct <- subset(poem.models.decision, (power.sim.treat.effect > 0 & power.sim.pvalue < 0.1))
+poem.models.decision.pos.true <- subset(poem.models.decision, (true.effect > 0))
+
+## ADOPTING ALL INTERVENTIONS
+paste("Adopting all interventions. Total outcome: ",
+      sprintf("%0.1f", sum(poem.models.decision$true.effect)), sep="")
+
+## ADOPTING ALL POSITIVE TRUE EFFECTS
+paste(sprintf("%.01f", nrow(poem.models.decision.pos.true) / nrow(subset(poem.models.decision,true.effect>0))*100), 
+      "% of positive true effects (optimal decisions). Total outcome: ",
+      sprintf("%0.1f", sum(poem.models.decision.pos.true$true.effect)), sep="")
+
+## ADOPTING ALL POSITIVE ESTIMATED EFFECTS
+paste(sprintf("%.01f", nrow(poem.models.decision.pos) / nrow(subset(poem.models.decision,true.effect>0))*100), 
+      "% of positive interventions chosen if estimated effect positive. Total outcome: ",
+      sprintf("%0.1f", sum(poem.models.decision.pos$true.effect)), sep="")
+
+## ADOPTING ALL STATISTICALLY-SIGNIFICANT ESTIMATED EFFECTS
+paste(sprintf("%.01f", nrow(poem.models.decision.pos.sig) / nrow(subset(poem.models.decision,true.effect>0))*100), 
+      "% of positive interventions chosen if expecting statistical-significance. Total outcome: ",
+      sprintf("%0.1f", sum(poem.models.decision.pos.sig$true.effect)), sep="")
+
+## ADOPTING ESTIMATED EFFECTS AT p < 0.1
+paste(sprintf("%.01f", nrow(poem.models.decision.pos.tenpct) / nrow(subset(poem.models.decision,true.effect>0))*100), 
+      "% of positive interventions chosen if p<0.1 Total outcome: ",
+      sprintf("%0.1f", sum(poem.models.decision.pos.tenpct$true.effect)), sep="")
+
