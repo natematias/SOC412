@@ -42,7 +42,7 @@ rm(list=ls())
 ## from a dataframe up to the number of rows
 ## in that dataframe
 randomSample = function(df,n) { 
-  return (df[sample(nrow(df), n),])
+  return (df[sample(nrow(df), n, replace=TRUE),])
 }
 
 ## LOAD COLORBLIND SAFE PALETTE
@@ -120,8 +120,7 @@ sim.posts$condition <- as.numeric(zrnorm(num.observations)>0)
 effect.multiplier = 1.5
 
 sim.posts$num.comments.effect <- 1
-sim.posts$num.comments.effect[sim.posts$condition==1] <- abs(zrnorm(nrow(subset(sim.posts, condition==1)), 
-                                                                     effect.multiplier))
+sim.posts$num.comments.effect[sim.posts$condition==1] <- abs(zrnorm(nrow(subset(sim.posts, condition==1))) + effect.multiplier)
 sim.posts$num.comments.sim <- sim.posts$num.comments * sim.posts$num.comments.effect
 
 ## PLOT RELATIONSHIP BETWEEN SIMULATED NUMBER AND OBSERVED NUMBER
