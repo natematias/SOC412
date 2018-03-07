@@ -6,6 +6,8 @@ library(texreg)
 library(rms)
 library(blockrand)
 library(psych)
+library(RcppZiggurat)
+
 
 ## CLEAR PROJECT
 rm(list=ls())
@@ -112,14 +114,13 @@ num.observations = 10000
 sim.posts <-randomSample(posts, num.observations)
 
 ## GENERATE RANDOMIZATIONS
-randomizations <- blockrand(n=nrow(sim.posts), num.levels = 2, block.sizes = c(12,12), id.prefix='post', block.prefix='block',stratum='post')
-sim.posts$condition <- head(randomizations$treatment, nrow(sim.posts))
+sim.posts$condition <- as.numeric(zrnorm(num.observations)>0)
 
 ## GENERATE AVERAGE TREATMENT EFFECT FOR NUM.COMMENTS
 effect.multiplier = 1.5
 
 sim.posts$num.comments.effect <- 1
-sim.posts$num.comments.effect[sim.posts$condition=="B"] <- abs(rnorm(nrow(subset(sim.posts, condition=="B")), 
+sim.posts$num.comments.effect[sim.posts$condition==1] <- abs(zrnorm(nrow(subset(sim.posts, condition==1)), 
                                                                      effect.multiplier))
 sim.posts$num.comments.sim <- sim.posts$num.comments * sim.posts$num.comments.effect
 
