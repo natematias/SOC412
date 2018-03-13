@@ -16,7 +16,11 @@ Because you want to improve public trust in your research by limiting your discr
 This assignment will give you a chance to write a pre-analysis plan, which you will create for the project you take on for the final. 
 
 ## Materials for this assignment
-For this assignment, use the materials from the [Week 4 power analysis assignment](../3-power-analysis/)
+For this assignment, use the materials from the [Week 4 power analysis assignment](../3-power-analysis/). As you craft your pre-analysis plan, take a look at the following examples
+
+* The pre-analysis plan for the [2015 Miami Transgender Experiment](http://egap.org/registration/1234) by David Broockman and Joshua Kalla ([written about in the NYT here](https://www.nytimes.com/2016/04/08/science/doorstep-canvassing-can-shift-views-on-transgender-rights-study-finds.html))
+* The pre-analysis plan for [my r/science experiment](https://osf.io/jhkcf/) in 2016 (your dependent variables are different)
+* The pre-analysis plan from Don Green's lab for [a test of police-worn body cameras](https://osf.io/hpmrt/). Here's [the amazing website where they reported the results](http://bwc.thelab.dc.gov/) (all null findings, which were super valuable!)
 
 ## Assignment
 This assignment, which is due Friday at 5pm, has two parts. First, submit (in teams) submit a pre-analysis plan in a Word document with the following sections:
