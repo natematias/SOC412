@@ -18,7 +18,7 @@ This assignment will give you a chance to write a pre-analysis plan, which you w
 ## Materials for this assignment
 For this assignment, use the materials from the [Week 4 power analysis assignment](../3-power-analysis/]
 
-##Assignment
+## Assignment
 This assignment, which is due Friday at 5pm, has two parts. First, submit (in teams) submit a pre-analysis plan in a Word document with the following sections:
 
 * Introduce the study and the motivations (feel free to re-use from previous assignments) 
