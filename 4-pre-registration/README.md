@@ -1,4 +1,4 @@
-# Pre-Registration of An Online Engagement Experiment (Week 6 Assignment)
+# Pre-Registration Plan (Week 6 Assignment)
 **SOC 412: Designing Field Experiments at Scale**
 
 Princeton University Department of Sociology
