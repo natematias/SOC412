@@ -1,11 +1,11 @@
-# Pre-Registration Plan (Week 6 Assignment)
+# Pre-Registration Plan for Online Engagement Experiments (Week 6 Assignment)
 **SOC 412: Designing Field Experiments at Scale**
 
 Princeton University Department of Sociology
 
 J. Nathan Matias ([@natematias](https://twitter.com/natematias))
 
-## Background: Online Inter-planetary Exo-Biology Communities 
+## Background: Online Interplanetary Exo-Biology Communities 
 In this class assignment, carried out in teams of two or three, imagine that you are approached by an community on reddit that discusses the botany of planets outside of Earth. In this imagined timeline, humanity has spread across the stars and primarily communicates through digital means. Because  participants are scattered across the galaxy, they rely on an online community to distribute knowledge, discover people who share their interests, and even sometimes find jobs in exo-biology. They sometimes have fierce disputes about genetics, the nature of life, environmental issues, and the politics of galactic exploration, but it's a complicated universe, and they need each other. 
 
 The community asks you replicate an experiment that tested the effect of welcome messages on community participation. You have already designed the study, [conducted a power analysis](https://github.com/natematias/SOC412/tree/master/3-power-analysis), and decided how many posts to included in the study. Your role is to be an evaluator to support the community that is implementing the project. 
