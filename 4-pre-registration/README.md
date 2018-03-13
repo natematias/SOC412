@@ -12,10 +12,10 @@ The community asks you replicate an experiment that tested the effect of welcome
 
 Because you want to improve public trust in your research by limiting your discretion after the study has concluded, you plan to publish a pre-analysis plan for your study. This document can also be used to confirm details of your study with the community before proceeding. When you go to publish the results with an academic publisher, you will also be able to share the pre-registration plan with reviewers.
 
-## Purpose of the assignment##
+## Purpose of the assignment
 This assignment will give you a chance to write a pre-analysis plan, which you will create for the project you take on for the final. 
 
-## Materials for this assignment##
+## Materials for this assignment
 For this assignment, use the materials from the [Week 4 power analysis assignment](../3-power-analysis/]
 
 ##Assignment
