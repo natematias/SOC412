@@ -1,0 +1,163 @@
+Post ID,condition,day,text,text.length,likes,comments,shares,interactions,prediction,Friends,Experimenter ID,Topic,Team Name,Platform,non.compliance
+1,color,2/20/2018,,75,7,2,0,9,3,87,2,celebrity tweets,OH,Instagram,0
+2,color,2/21/2018,,28,6,1,0,7,3,87,2,celebrity tweets,OH,Instagram,0
+3,color,2/22/2018,,108,5,1,0,6,3,87,2,celebrity tweets,OH,Instagram,0
+4,plain,2/23/2018,,32,5,1,0,6,1,87,2,celebrity tweets,OH,Instagram,0
+5,plain,2/24/2018,,61,5,1,0,6,1,87,2,celebrity tweets,OH,Instagram,0
+6,plain,2/25/2018,,49,6,2,0,8,1,87,2,celebrity tweets,OH,Instagram,0
+7,color,2/26/2018,,10,4,0,0,4,1,87,2,celebrity tweets,OH,Instagram,0
+8,plain,2/27/2018,,26,5,0,0,5,1,87,2,celebrity tweets,OH,Instagram,0
+9,plain,2/28/2018,,18,5,1,0,6,2,87,2,celebrity tweets,OH,Instagram,0
+10,color,3/1/2018,,61,6,1,0,7,2,87,2,celebrity tweets,OH,Instagram,0
+11,plain,3/2/2018,,75,6,4,0,10,4,87,2,celebrity tweets,OH,Instagram,0
+12,plain,3/3/2018,,131,6,1,0,7,3,87,2,celebrity tweets,OH,Instagram,0
+13,color,3/4/2018,,135,5,2,0,7,3,87,2,celebrity tweets,OH,Instagram,0
+14,color,3/5/2018,,87,5,2,0,7,4,87,2,celebrity tweets,OH,Instagram,0
+1,color,2/20/2018,,66,23,4,0,27,5,1037,1,haikus,HD,Facebook,0
+2,plain,2/21/2018,,71,24,2,0,26,2,1037,1,haikus,HD,Facebook,0
+3,plain,2/22/2018,,76,18,2,0,20,3,1037,1,haikus,HD,Facebook,0
+4,color,2/23/2018,,65,21,3,0,24,3,1037,1,haikus,HD,Facebook,0
+5,color,2/24/2018,,70,22,2,0,24,2,1037,1,haikus,HD,Facebook,0
+6,color,2/25/2018,,73,14,0,0,14,2,1037,1,haikus,HD,Facebook,0
+7,plain,2/26/2018,,72,17,1,0,18,4,1037,1,haikus,HD,Facebook,0
+8,color,2/27/2018,,73,12,2,0,14,2,1037,1,haikus,HD,Facebook,0
+9,plain,2/28/2018,,73,18,3,0,21,4,1037,1,haikus,HD,Facebook,0
+10,color,3/1/2018,,66,20,1,0,21,2,1037,1,haikus,HD,Facebook,0
+11,plain,3/2/2018,,60,18,0,0,18,2,1037,1,haikus,HD,Facebook,0
+12,plain,3/3/2018,,56,17,0,0,17,4,1037,1,haikus,HD,Facebook,0
+13,color,3/4/2018,,58,15,2,0,17,3,1037,1,haikus,HD,Facebook,0
+14,plain,3/5/2018,,68,12,0,0,12,1,1037,1,haikus,HD,Facebook,0
+1,color,2/20/2018,,22,48,5,0,53,4,877,2,Fruit,mms,Facebook,0
+2,plain,2/21/2018,,38,37,3,0,40,4,877,2,Fruit,mms,Facebook,0
+3,plain,2/22/2018,,3,NA,NA,NA,0,NA,877,2,Fruit,mms,Facebook,1
+4,color,2/23/2018,,30,27,0,0,27,3,877,2,Fruit,mms,Facebook,0
+5,plain,2/24/2018,,15,20,1,0,21,2,877,2,Fruit,mms,Facebook,0
+6,color,2/25/2018,,3,NA,NA,NA,0,NA,877,2,Fruit,mms,Facebook,1
+7,plain,2/26/2018,,21,15,2,0,17,1,877,2,Fruit,mms,Facebook,0
+8,plain,2/27/2018,,14,22,4,0,26,1,877,2,Fruit,mms,Facebook,0
+9,color,2/28/2018,,28,56,10,0,66,5,877,2,Fruit,mms,Facebook,0
+10,plain,3/1/2018,,3,NA,NA,NA,0,NA,877,2,Fruit,mms,Facebook,1
+11,plain,3/2/2018,,26,32,7,0,39,3,877,2,Fruit,mms,Facebook,0
+12,color,3/3/2018,,29,30,4,0,34,4,877,2,Fruit,mms,Facebook,0
+13,color,3/4/2018,,3,NA,NA,NA,0,NA,877,2,Fruit,mms,Facebook,1
+14,color,3/5/2018,,35,39,2,0,41,2,877,2,Fruit,mms,Facebook,0
+1,color,2/20/2018,,84,54,5,0,99,5,2040,1,r/showerthoughts,OH,Facebook,0
+2,color,2/21/2018,,82,55,5,0,69,2,2040,1,r/showerthoughts,OH,Facebook,0
+3,color,2/22/2018,,61,55,2,0,59,2,2040,1,r/showerthoughts,OH,Facebook,0
+4,plain,2/23/2018,,89,36,3,0,44,1,2040,1,r/showerthoughts,OH,Facebook,0
+5,plain,2/24/2018,,96,42,4,0,94,1,2040,1,r/showerthoughts,OH,Facebook,0
+6,plain,2/25/2018,,83,77,2,0,90,1,2040,1,r/showerthoughts,OH,Facebook,0
+7,color,2/26/2018,,38,84,11,0,104,1,2040,1,r/showerthoughts,OH,Facebook,0
+8,plain,2/27/2018,,81,96,2,0,101,3,2040,1,r/showerthoughts,OH,Facebook,0
+9,color,2/28/2018,,51,37,4,0,44,1,2040,1,r/showerthoughts,OH,Facebook,0
+10,color,3/1/2018,,34,91,6,0,116,1,2040,1,r/showerthoughts,OH,Facebook,0
+11,plain,3/2/2018,,57,91,5,0,132,1,2040,1,r/showerthoughts,OH,Facebook,0
+12,plain,3/3/2018,,107,38,3,0,44,1,2040,1,r/showerthoughts,OH,Facebook,0
+13,plain,3/4/2018,,56,52,4,0,64,2,2040,1,r/showerthoughts,OH,Facebook,0
+14,color,3/5/2018,,116,61,3,0,70,2,2040,1,r/showerthoughts,OH,Facebook,0
+1,color,2/20/2018,,57,11,1,0,12,3,90,1,Cardi B quotes,mms,Instagram,0
+2,color,2/21/2018,,52,12,4,0,16,4,90,1,Cardi B quotes,mms,Instagram,0
+3,plain,2/22/2018,,46,11,2,0,13,4,90,1,Cardi B quotes,mms,Instagram,0
+4,plain,2/23/2018,,56,11,3,0,14,4,90,1,Cardi B quotes,mms,Instagram,0
+5,color,2/24/2018,,55,5,0,0,5,2,90,1,Cardi B quotes,mms,Instagram,0
+6,plain,2/25/2018,,66,7,0,0,7,2,90,1,Cardi B quotes,mms,Instagram,0
+7,color,2/26/2018,,64,8,0,0,8,3,90,1,Cardi B quotes,mms,Instagram,0
+8,color,2/27/2018,,98,14,0,0,14,4,90,1,Cardi B quotes,mms,Instagram,0
+9,plain,2/28/2018,,30,12,0,0,12,3,90,1,Cardi B quotes,mms,Instagram,0
+10,plain,3/1/2018,,59,8,2,0,10,3,90,1,Cardi B quotes,mms,Instagram,0
+11,color,3/2/2018,,64,10,1,0,11,4,90,1,Cardi B quotes,mms,Instagram,0
+12,plain,3/3/2018,,118,11,0,0,11,4,90,1,Cardi B quotes,mms,Instagram,0
+13,plain,3/4/2018,,63,10,0,0,10,3,90,1,Cardi B quotes,mms,Instagram,0
+14,color,3/5/2018,,74,6,0,0,6,5,90,1,Cardi B quotes,mms,Instagram,0
+1,color,2/20/2018,,75,30,3,0,33,4,805,1,Dr. Seuss,Balance,Facebook,0
+2,color,2/21/2018,,97,21,1,0,22,3,805,1,Dr. Seuss,Balance,Facebook,0
+3,plain,2/22/2018,,132,21,3,0,24,3,805,1,Dr. Seuss,Balance,Facebook,0
+4,plain,2/23/2018,,99,18,1,0,19,3,805,1,Dr. Seuss,Balance,Facebook,0
+5,plain,2/24/2018,,103,1,1,0,2,2,805,1,Dr. Seuss,Balance,Facebook,0
+6,color,2/25/2018,,84,27,1,0,28,4,805,1,Dr. Seuss,Balance,Facebook,0
+7,color,2/26/2018,,78,32,5,0,37,5,805,1,Dr. Seuss,Balance,Facebook,0
+8,plain,2/27/2018,,106,15,5,0,20,3,805,1,Dr. Seuss,Balance,Facebook,0
+9,plain,2/28/2018,,158,15,1,0,16,4,805,1,Dr. Seuss,Balance,Facebook,0
+10,plain,3/1/2018,,190,12,0,0,12,3,805,1,Dr. Seuss,Balance,Facebook,0
+11,color,3/2/2018,,97,10,0,0,10,2,805,1,Dr. Seuss,Balance,Facebook,0
+12,color,3/3/2018,,109,12,0,0,12,3,805,1,Dr. Seuss,Balance,Facebook,0
+13,color,3/4/2018,,88,10,0,0,10,3,805,1,Dr. Seuss,Balance,Facebook,0
+14,plain,3/5/2018,,97,26,1,0,27,4,805,1,Dr. Seuss,Balance,Facebook,0
+1,color,2/20/2018,,91,0,0,0,0,1,487,11,Poems,Twitter,Twitter,0
+2,plain,2/21/2018,,126,1,0,0,1,1,487,11,Poems,Twitter,Twitter,0
+3,color,2/22/2018,,107,0,0,0,0,1,487,11,Poems,Twitter,Twitter,0
+4,plain,2/23/2018,,111,0,0,0,0,2,487,11,Poems,Twitter,Twitter,0
+5,color,2/24/2018,,53,1,0,0,1,2,487,11,Poems,Twitter,Twitter,0
+6,color,2/25/2018,,80,0,0,0,0,1,487,11,Poems,Twitter,Twitter,0
+7,plain,2/26/2018,,86,1,0,0,1,1,487,11,Poems,Twitter,Twitter,0
+8,plain,2/27/2018,,157,0,0,0,0,1,487,11,Poems,Twitter,Twitter,0
+9,color,2/28/2018,,118,1,0,0,1,3,487,11,Poems,Twitter,Twitter,0
+10,plain,3/1/2018,,56,1,0,0,1,1,487,11,Poems,Twitter,Twitter,0
+11,color,3/2/2018,,68,1,0,0,1,2,487,11,Poems,Twitter,Twitter,0
+12,plain,3/3/2018,,127,0,0,0,0,1,487,11,Poems,Twitter,Twitter,0
+13,plain,3/4/2018,,146,0,0,0,0,1,487,11,Poems,Twitter,Twitter,0
+14,color,3/5/2018,,130,0,0,0,0,3,487,11,Poems,Twitter,Twitter,0
+1,color,2/20/2018,,61,16,3,0,19,3,2155,2,Shakespeare,A/Z,Facebook,0
+2,plain,2/21/2018,,44,4,0,0,4,3,2155,2,Shakespeare,A/Z,Facebook,0
+3,plain,2/22/2018,,44,2,0,0,2,2,2155,2,Shakespeare,A/Z,Facebook,0
+4,color,2/23/2018,,61,11,1,0,12,3,2155,2,Shakespeare,A/Z,Facebook,0
+5,color,2/24/2018,,48,14,0,0,14,3,2155,2,Shakespeare,A/Z,Facebook,0
+6,plain,2/25/2018,,56,3,0,0,3,3,2155,2,Shakespeare,A/Z,Facebook,0
+7,color,2/26/2018,,40,2,0,0,2,4,2155,2,Shakespeare,A/Z,Facebook,0
+8,plain,2/27/2018,,41,7,0,0,7,3,2155,2,Shakespeare,A/Z,Facebook,0
+9,plain,2/28/2018,,78,4,1,0,5,4,2155,2,Shakespeare,A/Z,Facebook,0
+10,color,3/1/2018,,50,8,2,0,10,3,2155,2,Shakespeare,A/Z,Facebook,0
+11,color,3/2/2018,,41,1,0,0,1,4,2155,2,Shakespeare,A/Z,Facebook,0
+12,plain,3/3/2018,,51,6,2,0,8,3,2155,2,Shakespeare,A/Z,Facebook,0
+13,color,3/4/2018,,39,14,0,0,14,4,2155,2,Shakespeare,A/Z,Facebook,0
+14,plain,3/5/2018,,44,7,1,0,8,3,2155,2,Shakespeare,A/Z,Facebook,0
+1,color,2/20/2018,,40,11,2,0,13,5,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+2,plain,2/21/2018,,43,14,1,0,15,4,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+3,color,2/22/2018,,43,9,2,0,11,2,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+4,plain,2/23/2018,,32,4,1,0,5,4,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+5,color,2/24/2018,,33,6,0,0,6,5,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+6,plain,2/25/2018,,33,8,0,0,8,3,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+7,plain,2/26/2018,,49,5,0,0,5,3,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+8,plain,2/27/2018,,45,4,1,0,5,4,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+9,plain,2/28/2018,,42,3,0,0,3,1,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+10,color,3/1/2018,,37,2,1,0,3,4,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+11,color,3/2/2018,,62,3,0,0,3,4,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+12,color,3/3/2018,,43,6,0,0,6,1,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+13,plain,3/4/2018,,35,3,0,0,3,1,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+14,color,3/5/2018,,47,5,0,0,5,1,745,2,Chance the Rapper lyrics,Balance,Facebook,0
+1,plain,2/20/2018,,113,5,0,1,6,3,183,1,Inspiring Quotes,A/Z,Facebook,0
+2,plain,2/21/2018,,135,9,0,1,10,4,183,1,Inspiring Quotes,A/Z,Facebook,0
+3,color,2/23/2018,,106,8,0,2,10,5,183,1,Inspiring Quotes,A/Z,Facebook,0
+4,plain,2/24/2018,,178,2,0,0,2,3,183,1,Inspiring Quotes,A/Z,Facebook,0
+5,color,2/25/2018,,116,5,0,0,5,3,183,1,Inspiring Quotes,A/Z,Facebook,0
+6,color,2/26/2018,,56,2,0,1,3,5,183,1,Inspiring Quotes,A/Z,Facebook,0
+7,plain,2/27/2018,,68,14,0,0,14,4,183,1,Inspiring Quotes,A/Z,Facebook,0
+8,plain,2/28/2018,,69,5,0,0,5,3,183,1,Inspiring Quotes,A/Z,Facebook,0
+9,color,3/1/2018,,53,9,0,0,9,4,183,1,Inspiring Quotes,A/Z,Facebook,0
+10,plain,3/3/2018,,179,3,0,0,3,4,183,1,Inspiring Quotes,A/Z,Facebook,0
+11,plain,3/4/2018,,114,4,0,0,4,3,183,1,Inspiring Quotes,A/Z,Facebook,0
+12,color,3/5/2018,,85,8,0,0,8,3,183,1,Inspiring Quotes,A/Z,Facebook,0
+13,color,3/6/2018,,71,4,0,0,4,5,183,1,Inspiring Quotes,A/Z,Facebook,0
+14,color,3/7/2018,,95,1,0,2,3,3,183,1,Inspiring Quotes,A/Z,Facebook,0
+1,color,10/21/2017,,,2,0,0,2,,2092,1,Poems,JNM,Facebook,0
+2,plain,10/22/2017,,,0,0,0,0,,2092,1,Poems,JNM,Facebook,0
+3,plain,10/23/2017,,,8,1,0,9,,2092,1,Poems,JNM,Facebook,0
+4,color,10/24/2017,,,17,1,1,19,,2092,1,Poems,JNM,Facebook,0
+5,plain,10/25/2017,,,13,2,0,15,,2092,1,Poems,JNM,Facebook,0
+6,plain,10/29/2017,,,2,1,0,3,,2092,1,Poems,JNM,Facebook,0
+7,plain,10/30/2017,,,4,1,0,5,,2092,1,Poems,JNM,Facebook,0
+8,color,10/31/2017,,,8,0,0,8,,2092,1,Poems,JNM,Facebook,0
+9,plain,11/1/2017,,,0,0,0,0,,2092,1,Poems,JNM,Facebook,0
+10,plain,11/3/2017,,,9,0,0,9,,2092,1,Poems,JNM,Facebook,0
+11,color,11/4/2017,,,9,1,0,10,,2092,1,Poems,JNM,Facebook,0
+12,plain,11/5/2017,,,11,0,0,11,,2092,1,Poems,JNM,Facebook,0
+13,color,11/6/2017,,,14,2,0,16,,2092,1,Poems,JNM,Facebook,0
+14,color,11/7/2017,,,7,4,0,11,,2092,1,Poems,JNM,Facebook,0
+15,color,11/8/2017,,,8,1,0,9,,2092,1,Poems,JNM,Facebook,0
+16,plain,11/9/2017,,,10,0,0,10,,2092,1,Poems,JNM,Facebook,0
+17,color,11/11/2017,,,14,2,0,16,,2092,1,Poems,JNM,Facebook,0
+18,color,11/12/2017,,,6,3,0,9,,2092,1,Poems,JNM,Facebook,0
+19,plain,11/13/2017,,,6,1,0,7,,2092,1,Poems,JNM,Facebook,0
+20,color,11/15/2017,,,12,2,0,14,,2092,1,Poems,JNM,Facebook,0
+21,plain,11/17/2017,,,7,0,0,7,,2092,1,Poems,JNM,Facebook,0
+22,color,11/18/2017,,,12,2,0,14,,2092,1,Poems,JNM,Facebook,0
