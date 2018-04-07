@@ -6,6 +6,8 @@ library(texreg)
 library(rms)
 library(blockrand)
 library(psych)
+library(RcppZiggurat)
+
 
 ## CLEAR PROJECT
 rm(list=ls())
@@ -40,7 +42,7 @@ rm(list=ls())
 ## from a dataframe up to the number of rows
 ## in that dataframe
 randomSample = function(df,n) { 
-  return (df[sample(nrow(df), n),])
+  return (df[sample(nrow(df), n, replace=TRUE),])
 }
 
 ## LOAD COLORBLIND SAFE PALETTE
@@ -51,7 +53,7 @@ cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2"
 ####################################
 posts <- read.csv("subreddit_posts.csv")
 posts$is.selftext <- posts$is.selftext == "True"
-posts$weekend <- (posts$weekday == 6 | posts$weekday ==7)
+posts$weekend <- (posts$weekday == 5 | posts$weekday ==6)
 
 hist(log1p(posts$num.comments))
 
@@ -112,15 +114,13 @@ num.observations = 10000
 sim.posts <-randomSample(posts, num.observations)
 
 ## GENERATE RANDOMIZATIONS
-randomizations <- blockrand(n=nrow(sim.posts), num.levels = 2, block.sizes = c(12,12), id.prefix='post', block.prefix='block',stratum='post')
-sim.posts$condition <- head(randomizations$treatment, nrow(sim.posts))
+sim.posts$condition <- as.numeric(zrnorm(num.observations)>0)
 
 ## GENERATE AVERAGE TREATMENT EFFECT FOR NUM.COMMENTS
 effect.multiplier = 1.5
 
 sim.posts$num.comments.effect <- 1
-sim.posts$num.comments.effect[sim.posts$condition=="B"] <- abs(rnorm(nrow(subset(sim.posts, condition=="B")), 
-                                                                     effect.multiplier))
+sim.posts$num.comments.effect[sim.posts$condition==1] <- abs(zrnorm(nrow(subset(sim.posts, condition==1))) + effect.multiplier)
 sim.posts$num.comments.sim <- sim.posts$num.comments * sim.posts$num.comments.effect
 
 ## PLOT RELATIONSHIP BETWEEN SIMULATED NUMBER AND OBSERVED NUMBER
