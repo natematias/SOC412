@@ -491,95 +491,155 @@ power.analysis.from.negbin <- function(sample.size.min, sample.size.increment,
   result.df
 }
 
-#pafo <- power.analysis.from.observed(10000,10000,500000, sim.effect, posts, "newcomer.comments", 100)
-#pafo <- subset(pafo, is.na(model)==FALSE)
-
-#pafo$sample.size
-#ggplot(pafo, aes(sample.size, mean.effect, color=pct.significant)) + facet_grid(model ~ . ) + geom_point()
-
 #############################################################################
 ## ESTIMATE POWER ANALYSIS FROM NEGBIN (multiplier = 1.2) (multiplier = 1)
 
-#pafnb <- power.analysis.from.negbin(10000,2000,100000, sim.effect, base.model.nb, 50)
-#pafnb <- subset(pafnb, is.na(model)==FALSE)
+pafnb <- power.analysis.from.negbin(10000,2000,100000, sim.effect, base.model.nb, 50)
+pafnb <- subset(pafnb, is.na(model)==FALSE)
 
-ggplot(pafnb, aes(sample.size, pct.significant)) + facet_grid(model ~ . ) +
-  geom_hline(yintercept = 0.8, linetype=2) +
-  geom_point() +
-  geom_smooth() +
-  ggtitle("% chance of observing a statistically-significant effect with a given sample size (20% increase)")
+pafnb.no.effect <- power.analysis.from.negbin(10000,2000,100000, 1.0, base.model.nb, 50)
+pafnb.no.effect <- subset(pafnb.no.effect, is.na(model)==FALSE)
 
-ggplot(pafnb, aes(sample.size, type.s.rate)) + facet_grid(model ~ . ) + 
-  geom_point() +
-  geom_smooth() +
-  ylim(0,0.2) +
-  ggtitle("% chance of observing a type S error with a given sample size (20% increase)")
+pafob <- power.analysis.from.observed(10000,2000,100000, sim.effect, posts, "newcomer.comments", 50)
+pafob <- subset(pafob, is.na(model)==FALSE)
 
-summary(lm(pct.significant ~ model, data = subset(pafnb, model=="OLS" | model=="negbin")))
-####
+pafob.no.effect <- power.analysis.from.negbin(10000,2000,100000, 1.0, base.model.nb, 50)
+pafob.no.effect <- subset(pafob.no.effect, is.na(model)==FALSE)
 
-#pafnb.no.effect <- power.analysis.from.negbin(10000,2000,100000, 1.0, base.model.nb, 50)
-#pafnb.no.effect <- subset(pafnb.no.effect, is.na(model)==FALSE)
-
-ggplot(pafnb.no.effect, aes(sample.size, pct.significant)) + facet_grid(model ~ . ) +
-  geom_hline(yintercept = 0.8, linetype=2) +
-  geom_point() +
-  geom_smooth() +
-  ggtitle("% chance of a false positive with a given sample size (no effect)")
-
-ggplot(pafnb.no.effect, aes(sample.size, type.s.rate)) + facet_grid(model ~ . ) +
-  geom_hline(yintercept = 0.8, linetype=2) +
-  geom_point() +
-  geom_smooth() +
-  ggtitle("% chance of a type S error with a given sample size (no effect)")
-
-
-summary(lm(pct.significant ~ model, data = subset(pafnb.no.effect, model=="OLS" | model=="negbin" | model =="poisson")))
-
+save.image("simulate-count-model-experiment-outcomes.RData")
 
 #############################################################################
 ## ESTIMATE POWER ANALYSIS FROM OBSERVED (multiplier = 1.2) (multiplier = 1)
 #############################################################################
 
-pafob <- power.analysis.from.observed(10000,2000,100000, sim.effect, posts, "newcomer.comments", 50)
-pafob <- subset(pafob, is.na(model)==FALSE)
+load("simulate-count-model-experiment-outcomes.RData")
 
-ggplot(pafob, aes(sample.size, pct.significant)) + facet_grid(model ~ . ) +
+
+ggplot(subset(pafnb, model=="OLS" | model=="negbin" | model =="poisson"), aes(sample.size, pct.significant, color=factor(model))) + 
   geom_hline(yintercept = 0.8, linetype=2) +
   geom_point() +
-  geom_smooth() +
+  geom_smooth(size=1) +
   theme_bw(base_size = 15, base_family = "Helvetica") +
-  ggtitle("% chance of observing a statistically-significant effect with a given sample size (20% increase)")
+  scale_color_manual(values=cbbPalette, name="Model") +
+  scale_x_continuous(breaks=seq(10000, 100000, 10000), labels = scales::comma) +
+  scale_y_continuous(breaks=seq(0, 1, 0.1), labels = scales::comma) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.title.x=element_text(size=15, hjust=0, color="#555555")) + 
+  ylab("% significant") +
+  xlab(paste("Power analysis based on simulated effects using a negative binomial distribution",
+             "Simulated effect size: 20% increase in newcomer comments. Simulations per sample size: 50.",
+             "Interval between sample sizes: from 10k observations to 100k observations in intervals of 2k.",
+             "Fitted lines and confidence intervals are generated using a LOESS model.",
+             "Analysis by J. Nathan Matias (@natematias) of Princeton University and civilservant.io",
+             sep="\n")) +
+  ggtitle("% chance of observing a statistically-significant effect with a given sample size") +
+  ggsave("illustrations/pafnb.pct.significant.png", width = 10.5, height = 6, units = "in")
 
-ggplot(pafob, aes(sample.size, type.s.rate)) + facet_grid(model ~ . ) + 
-  geom_point() +
-  geom_smooth() +
-  ylim(0,0.2) +
-  theme_bw(base_size = 15, base_family = "Helvetica") +
-  ggtitle("% chance of observing a type S error with a given sample size (20% increase)")
-
-summary(lm(pct.significant ~ model, data = subset(pafob, model=="OLS" | model=="negbin")))
-####
-
-pafob.no.effect <- power.analysis.from.negbin(10000,2000,100000, 1.0, base.model.nb, 50)
-pafob.no.effect <- subset(pafob.no.effect, is.na(model)==FALSE)
-
-ggplot(pafob.no.effect, aes(sample.size, pct.significant)) + facet_grid(model ~ . ) +
+ggplot(subset(pafob, model=="OLS" | model=="negbin" | model =="poisson"), aes(sample.size, pct.significant, color=factor(model))) + 
   geom_hline(yintercept = 0.8, linetype=2) +
   geom_point() +
-  geom_smooth() +
+  geom_smooth(size=1) +
   theme_bw(base_size = 15, base_family = "Helvetica") +
-  ggtitle("% chance of a false positive with a given sample size (no effect)")
+  scale_color_manual(values=cbbPalette, name="Model") +
+  scale_x_continuous(breaks=seq(10000, 100000, 10000), labels = scales::comma) +
+  scale_y_continuous(breaks=seq(0, 1, 0.1), labels = scales::comma) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.title.x=element_text(size=15, hjust=0, color="#555555")) + 
+  ylab("% significant") +
+  xlab(paste("Power analysis based on simulated effects using observed data from reddit discussions",
+             "Simulated effect size: 20% increase in newcomer comments. Simulations per sample size: 50.",
+             "Interval between sample sizes: from 10k observations to 100k observations in intervals of 2k.",
+             "Fitted lines and confidence intervals are generated using a LOESS model.",
+             "Analysis by J. Nathan Matias (@natematias) of Princeton University and civilservant.io",
+             sep="\n")) +
+  ggtitle("% chance of observing a statistically-significant effect with a given sample size") +
+  ggsave("illustrations/pafob.pct.significant.png", width = 10.5, height = 6, units = "in")
 
-ggplot(pafob.no.effect, aes(sample.size, type.s.rate)) + facet_grid(model ~ . ) +
-  geom_hline(yintercept = 0.8, linetype=2) +
+
+ggplot(subset(pafnb, model=="OLS" | model=="negbin" | model =="poisson"), aes(sample.size, type.s.rate, color=factor(model))) + 
   geom_point() +
-  geom_smooth() +
+  geom_smooth(size=1) +
   theme_bw(base_size = 15, base_family = "Helvetica") +
-  ggtitle("% chance of a type S error with a given sample size (no effect)")
+  scale_color_manual(values=cbbPalette, name="Model") +
+  scale_x_continuous(breaks=seq(10000, 100000, 10000), labels = scales::comma) +
+  scale_y_continuous(breaks=seq(0, 0.1, 0.01), labels = scales::comma) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.title.x=element_text(size=15, hjust=0, color="#555555")) + 
+  ylab("% significant") +
+  xlab(paste("Type S error analysis based on simulated effects using a negative binomial distribution",
+             "Simulated effect size: 20% increase in newcomer comments. Simulations per sample size: 50.",
+             "Interval between sample sizes: from 10k observations to 100k observations in intervals of 2k.",
+             "Fitted lines and confidence intervals are generated using a LOESS model.",
+             "Analysis by J. Nathan Matias (@natematias) of Princeton University and civilservant.io",
+             sep="\n")) +
+  ggtitle("Type S Errors: % chance of statistically-significant result opposite from the true effect") +
+  ggsave("illustrations/pafnb.type.s.rate.png", width = 10.5, height = 6, units = "in")
 
 
-summary(lm(pct.significant ~ model, data = subset(pafnb.no.effect, model=="OLS" | model=="negbin" | model =="poisson")))
+ggplot(subset(pafob, model=="OLS" | model=="negbin" | model =="poisson"), aes(sample.size, type.s.rate, color=factor(model))) + 
+  geom_point() +
+  geom_smooth(size=1) +
+  theme_bw(base_size = 15, base_family = "Helvetica") +
+  scale_color_manual(values=cbbPalette, name="Model") +
+  scale_x_continuous(breaks=seq(10000, 100000, 10000), labels = scales::comma) +
+  scale_y_continuous(breaks=seq(0, 0.1, 0.01), labels = scales::comma) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.title.x=element_text(size=15, hjust=0, color="#555555")) + 
+  ylab("% significant") +
+  xlab(paste("Type S error analysis based on simulated effects using a negative binomial distribution",
+             "Simulated effect size: 20% increase in newcomer comments. Simulations per sample size: 50.",
+             "Interval between sample sizes: from 10k observations to 100k observations in intervals of 2k.",
+             "Fitted lines and confidence intervals are generated using a LOESS model.",
+             "Analysis by J. Nathan Matias (@natematias) of Princeton University and civilservant.io",
+             sep="\n")) +
+  ggtitle("Type S Errors: % chance of statistically-significant result opposite from the true effect") +
+  ggsave("illustrations/pafob.type.s.rate.png", width = 10.5, height = 6, units = "in")
 
 
-save.image("simulate-count-model-experiment-outcomes.RData")
+ggplot(subset(pafob.no.effect, model=="OLS" | model=="negbin" | model =="poisson"), aes(sample.size, pct.significant, color=factor(model))) + 
+  geom_point() +
+  geom_smooth(size=1) +
+  theme_bw(base_size = 15, base_family = "Helvetica") +
+  scale_color_manual(values=cbbPalette, name="Model") +
+  scale_x_continuous(breaks=seq(10000, 100000, 10000), labels = scales::comma) +
+  scale_y_continuous(breaks=seq(0, 1, 0.1), labels = scales::comma) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.title.x=element_text(size=15, hjust=0, color="#555555")) + 
+  ylab("% significant") +
+  xlab(paste("Power analysis based on simulated effects using observed data from reddit discussions",
+             "Simulated effect size: 20% increase in newcomer comments. Simulations per sample size: 50.",
+             "Interval between sample sizes: from 10k observations to 100k observations in intervals of 2k.",
+             "Analysis by J. Nathan Matias (@natematias) of Princeton University and civilservant.io",
+             sep="\n")) +
+  ggtitle("False Positives: % chance of observing a statistically-significant effect with no effect") +
+  ggsave("illustrations/pafob.no.effect.false.positives.png", width = 10.5, height = 6, units = "in")
+
+ggplot(subset(pafnb.no.effect, model=="OLS" | model=="negbin" | model =="poisson"), aes(sample.size, pct.significant, color=factor(model))) + 
+  geom_point() +
+  geom_smooth(size=1) +
+  theme_bw(base_size = 15, base_family = "Helvetica") +
+  scale_color_manual(values=cbbPalette, name="Model") +
+  scale_x_continuous(breaks=seq(10000, 100000, 10000), labels = scales::comma) +
+  scale_y_continuous(breaks=seq(0, 1, 0.1), labels = scales::comma) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.title.x=element_text(size=15, hjust=0, color="#555555")) + 
+  ylab("% significant") +
+  xlab(paste("Power analysis based on simulated effects using negative binomial distributions",
+             "Simulated effect size: 20% increase in newcomer comments. Simulations per sample size: 50.",
+             "Interval between sample sizes: from 10k observations to 100k observations in intervals of 2k.",
+             "Fitted lines and confidence intervals are generated using a LOESS model.",
+             "Analysis by J. Nathan Matias (@natematias) of Princeton University and civilservant.io",
+             sep="\n")) +
+  ggtitle("False Positives: % chance of observing a statistically-significant effect with no effect") +
+  ggsave("illustrations/pafnb.no.effect.false.positives.png", width = 10.5, height = 6, units = "in")
+
+
+summary(m.pct.significant <- lm(pct.significant ~ model, data = subset(pafob, model=="OLS" | model=="negbin")))
+screenreg(m.pct.significant)
+
+summary(m.false.positives <- lm(pct.significant ~ model, data = subset(pafob.no.effect, model=="OLS" | model=="negbin")))
+
+poisson.false.positive.rate <- mean(subset(pafob.no.effect, model=="poisson")$pct.significant)
+negbin.false.positive.rate <- mean(subset(pafob.no.effect, model=="negbin")$pct.significant)
+ols.false.positive.rate <- mean(subset(pafob.no.effect, model=="OLS")$pct.significant)
+
