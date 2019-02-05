@@ -17,7 +17,9 @@ As an experimenter who's taken SOC412, you convince the foundation to carry out 
 Now that the experiment is complete and you have collected all the data, it's time for you to analyze the data and write your first report to the Poetry Foundation. But there's a wrinkle: in the time since you were commissioned to do the study, a social media analytics company offered to provide real-time analytics to the Poetry Foundation based on "predictive models" and "data science." This company argues that A/B testing is slow and wasteful, and that their linear regression models will give the foundation "real-time metrics" that they can use to make daily decisions about how to post poetry.
 
 ## Assignment
-For this assignment, **work in pairs** to a report for the foundation that describes what you learned, explains the benefits of causal inference, and argues why field experiments could help the foundation evaluate its programs on social media and beyond. Your essay should include:
+For this assignment, create a report for the foundation that describes what you learned, explains the benefits of causal inference, and argues why field experiments could help the foundation evaluate its programs on social media and beyond.
+
+Your essay should include:
 
 * a paragraph **describing the experiment design**, including the intervention being tested, the outcome measures being used, how long the study was conducted, and how many poems were included.
 * a paragraph **summarizing the findings**. It should describe the range of the dependent variable, the means for each condition, and a statement of the effect size.
@@ -25,7 +27,7 @@ For this assignment, **work in pairs** to a report for the foundation that descr
 * include a **table of results** and an **illustration of the average treatment effect**. You could (a) show the effect with error bars or (b) show fitted(predicted) values for each condition, with error bars for the treatment (color). If you show fitted values, document details of any covariates(predictors) used to generate the fitted values (such as weekend). 
 * a paragraph that builds on this finding in the attempt to **convince the foundation to do more evaluation**, with social media, and more broadly in the organization.
 
-Please submit the assignment via Blackboard in HTML or Word format using the naming convention SURNAME1-SURNAME2-WEEK1-POETRY.doc
+Please submit the assignment via Blackboard in PDF or Word format using the naming convention SURNAME-WEEK1-POETRY.docx
 
 ## Purpose of the assignment
 The main purpose of this assignment is to gain a rough sense of where different students are in the skills that this class will support you to develop
