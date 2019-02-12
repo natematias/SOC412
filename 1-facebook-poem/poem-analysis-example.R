@@ -45,8 +45,8 @@ ggplot(poems, aes(interactions)) +
 ggplot(poems, aes(log1p(interactions))) +
   geom_histogram(binwidth=0.25) +
   theme_bw(base_size = 15, base_family = "Helvetica") +
-  ylab("ln Number of Poems") +
-  xlab("Facebook Interactions") +
+  ylab("Number of Poems") +
+  xlab("ln Facebook Interactions") +
   scale_color_manual(values=cbbPalette, name="Intervention") +
   ggtitle("Histogram of log-transformed Facebook Interactions Per Poem")
 
