@@ -42,3 +42,6 @@ To conduct this study, you will need to carry out the following procedure:
 * Every time you post, you should also:
   * Make a record about the previous's day's message at the same time you make a new post, roughly 24 hours later
   * For posts where you promised to remove the conversation after 24 hours, remove the post **after** recording the results
+  
+Data about the study can be stored in an Excel spreadsheet like the one in this folder (*Facebook Color RCT Example Spreadsheet SOC 412.xls*), or it can be stored using a copy of [this Google Sheets template](https://docs.google.com/spreadsheets/d/1Z6j_AURC_VluabPciCSp0Mv0HCtmLqZUt6eXemO27dw/edit?usp=sharing).
+
