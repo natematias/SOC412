@@ -38,3 +38,4 @@ vignettes/*.pdf
 
 .DS_Store
 .ipynb_checkpoints
+2-facebook-tagging/personal-data/*
