@@ -31,9 +31,9 @@ To conduct this study, you will need to carry out the following procedure:
 
 * Each person **publishes a post once a day**, roughly at the same time every day:
   * Randomly assign that post to have an appeal for comments, or have no appeal for comment
-  * Do not reply to comments on your post over the next 24 hours
+  * Do not reply to comments on your post over the next 24 hours (you can do so after)
   * If you see a classmate's experiment post, **do not react or comment** on it.
 * Every time you post, you should also:
-  * Make a record about the previous's day's message at the same time you make a new post, roughly 24 hours later
+  * Make a record in the spreadsheet about the previous's day's message at the same time you make a new post, roughly 24 hours later
 
 Data about the study can be stored in an Excel spreadsheet like the one in this folder (Facebook RCT Example Spreadsheet SOC 412.xlsx), or it can be stored using a copy of [this Google Sheets template](https://docs.google.com/spreadsheets/d/1yhgNmsFslc4nfIy-PTzFPgEDSOtrtuKH5wdzO-H0L0U/edit?usp=sharing).
