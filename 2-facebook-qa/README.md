@@ -6,7 +6,7 @@ Princeton University Department of Sociology
 
 J. Nathan Matias ([@natematias](https://twitter.com/natematias))
 
-In this experiment, we randomly assign topics to be posted for discussion using either a public Facebook post (public on the internet, persists forever) or a Facebook story (only among friends, disappears in 24 hours).
+In this experiment, we randomly assign posts to receive an appeal for discussion or not and measure the effects, if any, on the number of interactions that those posts receive.
 
 ## Background
 In this class assigment, carried out in teams of two or three, you will be expected to carry out a randomized trial over a 1-2 week period, combine data from your findings, analyze the results, and report what you found. The basic structure of this experiment is based on the [Facebook Poem Experiment](https://github.com/natematias/SOC412/blob/master/1-facebook-poem/README.md) from last week. The purpose of this assignment is to give you a first opportunity to conduct an experiment live on the web.
