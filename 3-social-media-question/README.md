@@ -9,7 +9,7 @@ J. Nathan Matias ([@natematias](https://twitter.com/natematias))
 In this class assignment:
 * Analyze your results from the social media question experiment. 
     * If you were unable to complete the experiment, pick one of the result sets and write about that for the assignment
-* Create a chart to illustrate the results ([example in this post](https://medium.com/@natematias/how-anyone-can-audit-facebooks-newsfeed-b879c3e29015)). This illustration should:
+* Create a chart to illustrate the results ([example in this post](https://medium.com/@natematias/how-anyone-can-audit-facebooks-newsfeed-b879c3e29015)). You may benefit from using graphics software, or even just Powerpoint/Keynote/Google to arrange all of the components of your chart. This illustration should:
     * State the finding
     * Include 95% confidence intervals (up to you if you want a point estimate or not)
     * Label all axes
