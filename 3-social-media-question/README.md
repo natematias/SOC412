@@ -9,7 +9,16 @@ J. Nathan Matias ([@natematias](https://twitter.com/natematias))
 In this class assignment:
 * Analyze your results from the social media question experiment. 
     * If you were unable to complete the experiment, pick one of the result sets and write about that for the assignment
-* Create a chart to illustrate the results
+* Create a chart to illustrate the results ([example in this post](https://medium.com/@natematias/how-anyone-can-audit-facebooks-newsfeed-b879c3e29015)). This illustration should:
+    * State the finding
+    * Include 95% confidence intervals (up to you if you want a point estimate or not)
+    * Label all axes
+    * Include the sample size
+    * State the time period of the study
+    $ State the platform where the study occurred
+    * State the estimator
+    * Include a treatment example
+    * Include your name
 * Complete and submit but **do not post** the debriefing essay you wrote to your friends in a previous assignment
 * Submit the assignment by 5pm on Friday
 
@@ -27,3 +36,5 @@ Using the code and data, you will need to develop an estimate and a chart for ju
 
 ## Explaining null results
 In this study, some of you will have null results. You will have to find a way to explain a null result to the people in your life. To help you explain a null result, you may find [this power calculator on egap](https://egap.shinyapps.io/power-app/) helpful, especially if you choose to report the linear regression / difference in mean estimator. Using this power calculator, you can estimate the smallest effect you would have been realiably able to detect with your individual sample size.
+
+If you have questions about how to explain null results, we can talk more about them in the precept or on Slack.
