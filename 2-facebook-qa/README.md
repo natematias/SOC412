@@ -1,4 +1,4 @@
-# Social Media Conversation Experiment (Week 3-5 Assignment)
+# Social Media Question Experiment (Week 3-5 Assignment)
 
 **SOC 412: Designing Field Experiments at Scale**
 
