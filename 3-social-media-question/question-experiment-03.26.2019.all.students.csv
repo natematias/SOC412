@@ -1,6 +1,6 @@
 compliance,post.id,condition,day,characters,likes,comments,shares,interactions,popularity.prediction,platform,friends.at.beginning.obfuscated,experimenter,topics
 1,1,treatment,2/22/19,102,6,1,0,7,2,Facebook,1104,Z1,Quotes
-1,2,control,2/23/19,85,12,1,0,13,4,Facebook,1104,Z1,Quotes
+1,2,control,2/23/19,42,12,1,0,13,4,Facebook,1104,Z1,Quotes
 1,3,treatment,2/24/19,182,9,0,0,9,3,Facebook,1104,Z1,Quotes
 1,4,control,2/25/19,67,12,1,0,13,1,Facebook,1104,Z1,Quotes
 1,5,control,2/26/19,87,30,3,0,33,4,Facebook,1104,Z1,Quotes
@@ -9,56 +9,56 @@ compliance,post.id,condition,day,characters,likes,comments,shares,interactions,p
 1,8,control,3/1/19,94,19,2,0,21,2,Facebook,1104,Z1,Quotes
 1,9,control,3/2/19,65,13,0,0,13,2,Facebook,1104,Z1,Quotes
 1,10,control,3/3/19,85,16,1,0,17,3,Facebook,1104,Z1,Quotes
-1,11,treatment,3/4/19,0,14,2,0,16,4,Facebook,1104,Z1,Quotes
+1,11,treatment,3/4/19,148,14,2,0,16,4,Facebook,1104,Z1,Quotes
 1,12,control,3/5/19,84,11,1,0,12,2,Facebook,1104,Z1,Quotes
 1,13,treatment,3/6/19,76,10,3,0,13,3,Facebook,1104,Z1,Quotes
-1,14,control,3/7/19,84,14,2,0,16,2,Facebook,1104,Z1,Quotes
+1,14,control,3/7/19,102,14,2,0,16,2,Facebook,1104,Z1,Quotes
 1,15,treatment,3/8/19,92,16,2,0,18,3,Facebook,1104,Z1,Quotes
-1,16,treatment,3/9/19,0,10,1,0,11,2,Facebook,1104,Z1,Quotes
+1,16,treatment,3/9/19,103,10,1,0,11,2,Facebook,1104,Z1,Quotes
 1,17,treatment,3/10/19,62,15,2,0,17,2,Facebook,1104,Z1,Quotes
 0,18,treatment,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Facebook,1104,Z1,Quotes
 1,19,control,3/11/19,82,4,1,0,5,1,Facebook,1104,Z1,Quotes
 1,20,control,3/12/19,88,5,0,0,5,1,Facebook,1104,Z1,Quotes
 1,21,treatment,3/13/19,78,6,0,0,6,3,Facebook,1104,Z1,Quotes
 1,22,control,3/14/19,69,11,0,0,11,1,Facebook,1104,Z1,Quotes
-1,1,treatment,2/21/2019,9,51,3,0,3,3,Instagram Stories,175,Y1,Corgi in the snow
-1,2,control,2/21/2019,0,51,1,0,1,2,Instagram Stories,175,Y1,Squirrel in the snow
-1,3,control,2/21/2019,0,51,3,1,4,2,Instagram Stories,175,Y1,Fox in the snow
-1,4,treatment,2/21/2019,25,48,2,0,2,3,Instagram Stories,175,Y1,White ermine in the snow
-1,5,treatment,2/21/2019,12,58,2,0,2,4,Instagram Stories,175,Y1,Tiger in the snow
-1,6,control,2/21/2019,0,52,1,1,2,4,Instagram Stories,175,Y1,Dog with its head in the snow
-1,7,control,2/21/2019,0,46,1,1,2,3,Instagram Stories,175,Y1,Pandas in the snow
-1,8,treatment,2/21/2019,14,49,1,0,1,4,Instagram Stories,175,Y1,Snow leopard cubs in the snow
-0,9,control,2/21/2019,,,,,,,Instagram Stories,175,Y1,
-1,10,control,2/21/2019,0,46,0,0,0,2,Instagram Stories,175,Y1,Ermine in the snow
-1,11,treatment,2/21/2019,5,47,2,0,2,1,Instagram Stories,175,Y1,White ermine in the snow
-1,12,control,2/21/2019,0,46,0,0,0,4,Instagram Stories,175,Y1,Baby penguins in the snow
-1,13,treatment,2/21/2019,43,50,2,0,2,4,Instagram Stories,175,Y1,White rabbit in the snow
-1,14,treatment,2/21/2019,41,43,2,0,2,2,Instagram Stories,175,Y1,Penguins holding hands in the snow
-1,15,control,2/21/2019,0,45,0,1,1,1,Instagram Stories,175,Y1,White dog (?) in the snow
-1,16,control,2/21/2019,0,40,0,0,0,2,Instagram Stories,175,Y1,Lynx in the snow
-1,17,control,2/21/2019,0,35,0,0,0,2,Instagram Stories,175,Y1,Horse in the snow
-1,18,control,2/21/2019,0,43,2,0,2,3,Instagram Stories,175,Y1,Wild cat in the snow
-1,19,treatment,2/21/2019,5,41,2,1,3,4,Instagram Stories,175,Y1,Fox in the snow
-1,20,treatment,2/21/2019,43,46,1,0,1,2,Instagram Stories,175,Y1,Squirel in the snow
-1,21,treatment,2/21/2019,11,30,1,0,1,4,Instagram Stories,175,Y1,Birds in the snow
-1,22,treatment,2/21/2019,5,37,0,0,0,5,Instagram Stories,175,Y1,Deer in the snow
+1,1,treatment,2/21/2019,9,51,3,0,3,3,Instagram Stories,175,Y1,Cute Animal Pictures
+1,2,control,2/21/2019,0,51,1,0,1,2,Instagram Stories,175,Y1,Cute Animal Pictures
+1,3,control,2/21/2019,0,51,3,1,4,2,Instagram Stories,175,Y1,Cute Animal Pictures
+1,4,treatment,2/21/2019,25,48,2,0,2,3,Instagram Stories,175,Y1,Cute Animal Pictures
+1,5,treatment,2/21/2019,12,58,2,0,2,4,Instagram Stories,175,Y1,Cute Animal Pictures
+1,6,control,2/21/2019,0,52,1,1,2,4,Instagram Stories,175,Y1,Cute Animal Pictures
+1,7,control,2/21/2019,0,46,1,1,2,3,Instagram Stories,175,Y1,Cute Animal Pictures
+1,8,treatment,2/21/2019,14,49,1,0,1,4,Instagram Stories,175,Y1,Cute Animal Pictures
+0,9,control,2/21/2019,,,,,,,Instagram Stories,175,Y1,Cute Animal Pictures
+1,10,control,2/21/2019,0,46,0,0,0,2,Instagram Stories,175,Y1,Cute Animal Pictures
+1,11,treatment,2/21/2019,5,47,2,0,2,1,Instagram Stories,175,Y1,Cute Animal Pictures
+1,12,control,2/21/2019,0,46,0,0,0,4,Instagram Stories,175,Y1,Cute Animal Pictures
+1,13,treatment,2/21/2019,43,50,2,0,2,4,Instagram Stories,175,Y1,Cute Animal Pictures
+1,14,treatment,2/21/2019,41,43,2,0,2,2,Instagram Stories,175,Y1,Cute Animal Pictures
+1,15,control,2/21/2019,0,45,0,1,1,1,Instagram Stories,175,Y1,Cute Animal Pictures
+1,16,control,2/21/2019,0,40,0,0,0,2,Instagram Stories,175,Y1,Cute Animal Pictures
+1,17,control,2/21/2019,0,35,0,0,0,2,Instagram Stories,175,Y1,Cute Animal Pictures
+1,18,control,2/21/2019,0,43,2,0,2,3,Instagram Stories,175,Y1,Cute Animal Pictures
+1,19,treatment,2/21/2019,5,41,2,1,3,4,Instagram Stories,175,Y1,Cute Animal Pictures
+1,20,treatment,2/21/2019,43,46,1,0,1,2,Instagram Stories,175,Y1,Cute Animal Pictures
+1,21,treatment,2/21/2019,11,30,1,0,1,4,Instagram Stories,175,Y1,Cute Animal Pictures
+1,22,treatment,2/21/2019,5,37,0,0,0,5,Instagram Stories,175,Y1,Cute Animal Pictures
 1,1,control,2/23/19,245,6,0,0,6,5,Twitter,150,X1,Album
 1,2,treatment,2/24/19,248,0,0,0,0,5,Twitter,150,X1,TV
 1,3,control,2/25/19,38,0,0,0,0,5,Twitter,150,X1,Album
 1,4,treatment,2/26/19,199,0,2,0,2,4,Twitter,150,X1,Movie
 1,5,treatment,2/27/19,183,0,0,0,0,2,Twitter,150,X1,Album
-0,6,treatment,2/28/19,N/A,N/A,N/A,N/A,N/A,N/A,Twitter,150,X1,
+0,6,treatment,2/28/19,N/A,N/A,N/A,N/A,N/A,N/A,Twitter,150,X1,N/A
 1,7,control,3/1/19,153,3,0,0,3,3,Twitter,150,X1,Album
 1,8,control,3/2/19,199,2,0,0,2,2,Twitter,150,X1,Album
 1,9,control,3/3/19,124,0,0,0,0,5,Twitter,150,X1,TV
 1,10,control,3/4/19,157,0,0,0,0,1,Twitter,150,X1,Album
 1,11,treatment,3/5/19,149,0,0,0,0,1,Twitter,150,X1,Album
 1,12,treatment,3/6/19,183,1,1,0,2,3,Twitter,150,X1,Movie
-0,13,treatment,3/7/19,N/A,N/A,N/A,N/A,N/A,N/A,Twitter,150,X1,
+0,13,treatment,3/7/19,N/A,N/A,N/A,N/A,N/A,N/A,Twitter,150,X1,N/A
 1,14,treatment,3/8/19,192,2,1,0,3,5,Twitter,150,X1,TV
 1,15,control,3/9/19,185,1,0,0,1,3,Twitter,150,X1,Movie
-0,16,control,3/10/19,N/A,N/A,N/A,N/A,N/A,N/A,Twitter,150,X1,
+0,16,control,3/10/19,N/A,N/A,N/A,N/A,N/A,N/A,Twitter,150,X1,N/A
 1,17,control,3/11/19,212,0,1,0,1,2,Twitter,150,X1,Movie
 0,18,control,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Twitter,150,X1,Movie
 1,19,treatment,3/12/19,171,0,0,0,0,1,Twitter,150,X1,Movie
@@ -197,28 +197,28 @@ compliance,post.id,condition,day,characters,likes,comments,shares,interactions,p
 1,20,control,3/12/19,267,23,3,0,26,5,Facebook,2276,Y3,excerpt from my play
 1,21,control,3/13/19,1482,3,0,0,3,5,Facebook,2276,Y3,excerpt from my play
 1,22,treatment,3/14/19,714,40,2,0,42,5,Facebook,2276,Y3,excerpt from my play
-1,1,control,2/22/19 8:30 PM,148,68,2,,70,4,Facebook,1493,Z4,
-1,2,treatment,2/23/19 8:30 PM,140,35,2,,37,3,Facebook,1493,Z4,
-1,3,treatment,2/24/19 8:30 PM,177,35,2,,37,5,Facebook,1493,Z4,
-1,4,treatment,2/25/19 8:30 PM,130,41,4,,45,2,Facebook,1493,Z4,
-1,5,control,2/26/19 8:30 PM,90,25,5,,30,2,Facebook,1493,Z4,
-1,6,control,2/27/19 8:30 PM,190,34,0,,34,3,Facebook,1493,Z4,
-1,7,control,2/28/19 8:30 PM,142,25,0,,25,4,Facebook,1493,Z4,
-1,8,control,3/1/19 20:30,82,37,3,,40,4,Facebook,1493,Z4,
-1,9,treatment,3/2/19 20:30,56,33,3,,36,2,Facebook,1493,Z4,
-1,10,treatment,3/3/19 20:30,176,38,2,,40,5,Facebook,1493,Z4,
-1,11,control,3/4/19 20:30,131,35,5,,40,5,Facebook,1493,Z4,
-1,12,control,3/5/19 20:30,158,20,1,,21,4,Facebook,1493,Z4,
-1,13,treatment,3/6/19 20:30,114,23,2,,25,2,Facebook,1493,Z4,
-1,14,treatment,3/7/19 20:30,172,40,3,,43,2,Facebook,1493,Z4,
-1,15,treatment,3/8/19 20:30,389,29,0,,29,4,Facebook,1493,Z4,
-1,16,control,3/9/19 20:30,118,62,3,,65,1,Facebook,1493,Z4,
-1,17,treatment,3/10/19 20:30,203,44,2,,46,1,Facebook,1493,Z4,
-0,18,control,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Facebook,1493,Z4,
-1,19,treatment,3/11/19 20:30,188,17,0,,17,3,Facebook,1493,Z4,
-1,20,treatment,3/12/19 20:30,317,43,2,,45,4,Facebook,1493,Z4,
-1,21,control,3/13/19 8:30 PM,119,19,0,,19,2,Facebook,1493,Z4,
-1,22,control,3/14/19 8:30 PM,175,40,1,,41,5,Facebook,1493,Z4,
+1,1,control,2/22/19 8:30 PM,148,68,2,,70,4,Facebook,1493,Z4,N/A
+1,2,treatment,2/23/19 8:30 PM,140,35,2,,37,3,Facebook,1493,Z4,N/A
+1,3,treatment,2/24/19 8:30 PM,177,35,2,,37,5,Facebook,1493,Z4,N/A
+1,4,treatment,2/25/19 8:30 PM,130,41,4,,45,2,Facebook,1493,Z4,N/A
+1,5,control,2/26/19 8:30 PM,90,25,5,,30,2,Facebook,1493,Z4,N/A
+1,6,control,2/27/19 8:30 PM,190,34,0,,34,3,Facebook,1493,Z4,N/A
+1,7,control,2/28/19 8:30 PM,142,25,0,,25,4,Facebook,1493,Z4,N/A
+1,8,control,3/1/19 20:30,82,37,3,,40,4,Facebook,1493,Z4,N/A
+1,9,treatment,3/2/19 20:30,56,33,3,,36,2,Facebook,1493,Z4,N/A
+1,10,treatment,3/3/19 20:30,176,38,2,,40,5,Facebook,1493,Z4,N/A
+1,11,control,3/4/19 20:30,131,35,5,,40,5,Facebook,1493,Z4,N/A
+1,12,control,3/5/19 20:30,158,20,1,,21,4,Facebook,1493,Z4,N/A
+1,13,treatment,3/6/19 20:30,114,23,2,,25,2,Facebook,1493,Z4,N/A
+1,14,treatment,3/7/19 20:30,172,40,3,,43,2,Facebook,1493,Z4,N/A
+1,15,treatment,3/8/19 20:30,389,29,0,,29,4,Facebook,1493,Z4,N/A
+1,16,control,3/9/19 20:30,118,62,3,,65,1,Facebook,1493,Z4,N/A
+1,17,treatment,3/10/19 20:30,203,44,2,,46,1,Facebook,1493,Z4,N/A
+0,18,control,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Facebook,1493,Z4,N/A
+1,19,treatment,3/11/19 20:30,188,17,0,,17,3,Facebook,1493,Z4,N/A
+1,20,treatment,3/12/19 20:30,317,43,2,,45,4,Facebook,1493,Z4,N/A
+1,21,control,3/13/19 8:30 PM,119,19,0,,19,2,Facebook,1493,Z4,N/A
+1,22,control,3/14/19 8:30 PM,175,40,1,,41,5,Facebook,1493,Z4,N/A
 1,1,control,1,,1,1,,2,2,Instagram Stories,496,Y4,Same for all posts - word definitions
 1,2,treatment,2,,1,1,,2,4,Instagram Stories,496,Y4,Same for all posts - word definitions
 1,3,treatment,3,,3,2,,5,5,Instagram Stories,496,Y4,Same for all posts - word definitions
@@ -241,50 +241,50 @@ compliance,post.id,condition,day,characters,likes,comments,shares,interactions,p
 1,20,treatment,20,,1,0,,1,3,Instagram Stories,496,Y4,Same for all posts - word definitions
 1,21,control,21,,1,1,,2,3,Instagram Stories,496,Y4,Same for all posts - word definitions
 0,22,control,22,NA,NA,NA,NA,NA,NA,Instagram Stories,496,Y4,Same for all posts - word definitions
-1,1,treatment,,123,8,2,0,10,N/A,Facebook,1595,X4,
-1,2,treatment,,436,28,6,0,34,N/A,Facebook,1595,X4,
-1,3,treatment,,213,15,2,0,17,N/A,Facebook,1595,X4,
-1,4,control,,257,19,1,0,20,N/A,Facebook,1595,X4,
-1,5,control,,111,13,0,0,13,N/A,Facebook,1595,X4,
-1,6,control,,53,6,2,0,8,N/A,Facebook,1595,X4,
-1,7,treatment,,0,9,1,0,10,N/A,Facebook,1595,X4,
-1,8,treatment,,194,NA,NA,NA,0,N/A,Facebook,1595,X4,
-1,9,treatment,,0,NA,NA,NA,0,N/A,Facebook,1595,X4,
-1,10,treatment,,0,NA,NA,NA,0,N/A,Facebook,1595,X4,
-1,11,treatment,,194,12,0,0,12,N/A,Facebook,1595,X4,
-1,12,control,,113,18,0,0,18,N/A,Facebook,1595,X4,
-1,13,treatment,,148,0,1,0,1,N/A,Facebook,1595,X4,
-1,14,control,,76,5,0,0,5,N/A,Facebook,1595,X4,
-1,15,treatment,,138,4,1,0,5,N/A,Facebook,1595,X4,
-1,16,treatment,,158,5,0,0,5,N/A,Facebook,1595,X4,
-1,17,control,,85,11,0,0,11,N/A,Facebook,1595,X4,
-0,18,control,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Facebook,1595,X4,
-1,19,control,,72,6,0,0,6,N/A,Facebook,1595,X4,
-1,20,control,,131,13,0,0,13,N/A,Facebook,1595,X4,
-1,21,control,,77,8,1,0,9,N/A,Facebook,1595,X4,
-1,22,control,,297,16,0,0,16,N/A,Facebook,1595,X4,
-1,1,treatment,2-24,223,30,9,0,39,5,,1108,Z5,Life Pro Tips
-1,2,control,2-25,89,10,4,0,14,2,,1108,Z5,Life Pro Tips
-1,3,control,2-26,160,28,0,0,28,4,,1108,Z5,Life Pro Tips
-1,4,treatment,2-27,172,31,4,0,35,4,,1108,Z5,Life Pro Tips
-1,5,treatment,2-28,231,25,1,0,26,2,,1108,Z5,Life Pro Tips
-1,6,control,3-1,188,16,2,0,18,3,,1108,Z5,Life Pro Tips
-1,7,treatment,3-2,171,32,3,0,35,4,,1108,Z5,Life Pro Tips
-1,8,treatment,3-3,124,24,0,0,24,3,,1108,Z5,Life Pro Tips
-1,9,control,3-4,91,44,7,0,51,2,,1108,Z5,Life Pro Tips
-1,10,treatment,3-5,130,19,1,0,20,4,,1108,Z5,Life Pro Tips
-1,11,treatment,3-6,231,18,0,0,18,2,,1108,Z5,Life Pro Tips
-1,12,control,3-7,63,46,5,0,51,3,,1108,Z5,Life Pro Tips
-1,13,treatment,3-8,249,15,4,0,19,4,,1108,Z5,Life Pro Tips
-1,14,control,3-9,131,14,1,0,15,2,,1108,Z5,Life Pro Tips
-1,15,control,3-10,87,31,3,0,34,3,,1108,Z5,Life Pro Tips
-1,16,treatment,3-11,120,27,6,0,33,4,,1108,Z5,Life Pro Tips
-1,17,control,3-12,155,28,0,0,28,2,,1108,Z5,Life Pro Tips
-1,18,treatment,3-13,155,11,1,0,12,2,,1108,Z5,Life Pro Tips
-1,19,treatment,3-14,146,21,0,0,21,3,,1108,Z5,Life Pro Tips
-1,20,control,3-15,125,25,1,0,26,2,,1108,Z5,Life Pro Tips
-1,21,control,3-16,204,35,0,0,35,3,,1108,Z5,Life Pro Tips
-0,22,control,N/A,N/A,N/A,N/A,N/A,N/A,N/A,,1108,Z5,Life Pro Tips
+1,1,treatment,,123,8,2,0,10,N/A,Facebook,1595,X4,N/A
+1,2,treatment,,436,28,6,0,34,N/A,Facebook,1595,X4,N/A
+1,3,treatment,,213,15,2,0,17,N/A,Facebook,1595,X4,N/A
+1,4,control,,257,19,1,0,20,N/A,Facebook,1595,X4,N/A
+1,5,control,,111,13,0,0,13,N/A,Facebook,1595,X4,N/A
+1,6,control,,53,6,2,0,8,N/A,Facebook,1595,X4,N/A
+1,7,treatment,,0,9,1,0,10,N/A,Facebook,1595,X4,N/A
+1,8,treatment,,194,NA,NA,NA,0,N/A,Facebook,1595,X4,N/A
+1,9,treatment,,0,NA,NA,NA,0,N/A,Facebook,1595,X4,N/A
+1,10,treatment,,0,NA,NA,NA,0,N/A,Facebook,1595,X4,N/A
+1,11,treatment,,194,12,0,0,12,N/A,Facebook,1595,X4,N/A
+1,12,control,,113,18,0,0,18,N/A,Facebook,1595,X4,N/A
+1,13,treatment,,148,0,1,0,1,N/A,Facebook,1595,X4,N/A
+1,14,control,,76,5,0,0,5,N/A,Facebook,1595,X4,N/A
+1,15,treatment,,138,4,1,0,5,N/A,Facebook,1595,X4,N/A
+1,16,treatment,,158,5,0,0,5,N/A,Facebook,1595,X4,N/A
+1,17,control,,85,11,0,0,11,N/A,Facebook,1595,X4,N/A
+0,18,control,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Facebook,1595,X4,N/A
+1,19,control,,72,6,0,0,6,N/A,Facebook,1595,X4,N/A
+1,20,control,,131,13,0,0,13,N/A,Facebook,1595,X4,N/A
+1,21,control,,77,8,1,0,9,N/A,Facebook,1595,X4,N/A
+1,22,control,,297,16,0,0,16,N/A,Facebook,1595,X4,N/A
+1,1,treatment,2-24,223,30,9,0,39,5,Facebook,1108,Z5,Life Pro Tips
+1,2,control,2-25,89,10,4,0,14,2,Facebook,1108,Z5,Life Pro Tips
+1,3,control,2-26,160,28,0,0,28,4,Facebook,1108,Z5,Life Pro Tips
+1,4,treatment,2-27,172,31,4,0,35,4,Facebook,1108,Z5,Life Pro Tips
+1,5,treatment,2-28,231,25,1,0,26,2,Facebook,1108,Z5,Life Pro Tips
+1,6,control,3-1,188,16,2,0,18,3,Facebook,1108,Z5,Life Pro Tips
+1,7,treatment,3-2,171,32,3,0,35,4,Facebook,1108,Z5,Life Pro Tips
+1,8,treatment,3-3,124,24,0,0,24,3,Facebook,1108,Z5,Life Pro Tips
+1,9,control,3-4,91,44,7,0,51,2,Facebook,1108,Z5,Life Pro Tips
+1,10,treatment,3-5,130,19,1,0,20,4,Facebook,1108,Z5,Life Pro Tips
+1,11,treatment,3-6,231,18,0,0,18,2,Facebook,1108,Z5,Life Pro Tips
+1,12,control,3-7,63,46,5,0,51,3,Facebook,1108,Z5,Life Pro Tips
+1,13,treatment,3-8,249,15,4,0,19,4,Facebook,1108,Z5,Life Pro Tips
+1,14,control,3-9,131,14,1,0,15,2,Facebook,1108,Z5,Life Pro Tips
+1,15,control,3-10,87,31,3,0,34,3,Facebook,1108,Z5,Life Pro Tips
+1,16,treatment,3-11,120,27,6,0,33,4,Facebook,1108,Z5,Life Pro Tips
+1,17,control,3-12,155,28,0,0,28,2,Facebook,1108,Z5,Life Pro Tips
+1,18,treatment,3-13,155,11,1,0,12,2,Facebook,1108,Z5,Life Pro Tips
+1,19,treatment,3-14,146,21,0,0,21,3,Facebook,1108,Z5,Life Pro Tips
+1,20,control,3-15,125,25,1,0,26,2,Facebook,1108,Z5,Life Pro Tips
+1,21,control,3-16,204,35,0,0,35,3,Facebook,1108,Z5,Life Pro Tips
+0,22,control,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Facebook,1108,Z5,Life Pro Tips
 1,1,treatment,Feb. 21,361,58,1,0,59,4,Facebook,2283,X5,Dog
 1,2,control,Feb. 22,161,57,2,0,59,3,Facebook,2283,X5,Dog
 1,3,treatment,Feb. 23,304,48,2,0,50,5,Facebook,2283,X5,Dog
