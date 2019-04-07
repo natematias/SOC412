@@ -9,7 +9,7 @@ In this assignment, you work together with your whole team to conduct a power an
   * What the potential outcomes are for each of the arms of the experiment
   * What statistical tests your team will be conducting
 * Editing the power analysis "starting point" to customize the power analysis for your team's assumptions
-* Writing a short submission that reports:
+* Writing a short submission (no more than 2 pages) that reports:
   * Your assumptions:
     * Your reasons for the potential outcomes used
     * Your reasons for the statistical tests used
