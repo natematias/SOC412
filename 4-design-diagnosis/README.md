@@ -21,6 +21,8 @@ In this assignment, you work together with your whole team to conduct a power an
   * A contributions statement indicating how each person contributed to the assignment
     * Each team should have at least two people run the code independently before submitting, to confirm that it works
 
+The assignment is **Due on Friday, April 12 at 5:00pm**.
+
 **PLEASE CONTACT ME ON SLACK** if you have questions or get puzzled by something.
 
 Team-specific notes:
