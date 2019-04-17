@@ -1,6 +1,6 @@
 # SOC412 Final
 This class has a three-part final:
-* A *group presentation* of team projects in class son *May 9th*
+* A *group presentation* of team projects in class on *May 9th*
 * A *group submission* of project materials, due on *May 14th* at 5:00pm
 * A *final personal essay*, submitted individually, due on *May 14th* at 5:00pm
 
